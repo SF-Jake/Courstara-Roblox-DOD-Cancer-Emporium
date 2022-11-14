@@ -1,0 +1,31 @@
+	country_event = {
+	id = 99991
+	title = "99991.T"
+	
+	desc = "99991.D"
+	
+	trigger = {
+		OR = {
+			tag = NET
+			tag = RHI
+			tag = LRR
+		}
+		NOT = { has_country_flag = rebellion }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}	
+	option = {
+		name = "99991.A"
+		any_pop = {
+			militancy = -3
+		}
+		treasury = 10000
+		ammunition = 1000
+		small_arms = 1000
+		artillery = 1000
+		canned_food = 1000
+		regular_clothes = 1000
+		set_country_flag = rebellion
+	}
+}
