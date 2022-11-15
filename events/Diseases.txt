@@ -262,27 +262,27 @@ country_event = {
 		name = "EVTOPTA21030"
 		random_list = {
 			50 = {
-				add_country_modifier = { name = pandemic_influenza duration = 365 }
+				add_country_modifier = { name = pandemic_influenza duration = 273 }
 				any_owned = { limit = { NOT = {total_pops = 3000 } }
-				add_province_modifier = { name = pandemic_influenza_immunity duration = 365 }
+				add_province_modifier = { name = pandemic_influenza_immunity duration = 273 }
 				}
 			}
 			30 = { 
-				add_country_modifier = { name = pandemic_influenza duration = 305 }
+				add_country_modifier = { name = pandemic_influenza duration = 228 }
 				any_owned = { limit = { NOT = {total_pops = 3000 } }
-				add_province_modifier = { name = pandemic_influenza_immunity duration = 305 }
+				add_province_modifier = { name = pandemic_influenza_immunity duration = 228 }
 				}
 			}
 			15 = {
-				add_country_modifier = { name = pandemic_influenza duration = 395 } 
+				add_country_modifier = { name = pandemic_influenza duration = 296 } 
 				any_owned = { limit = { NOT = {total_pops = 3000 } }
-				add_province_modifier = { name = pandemic_influenza_immunity duration = 395 }
+				add_province_modifier = { name = pandemic_influenza_immunity duration = 296 }
 				}
 			}
 			05 = {
-				add_country_modifier = { name = pandemic_influenza duration = 425 } 
+				add_country_modifier = { name = pandemic_influenza duration = 318 } 
 				any_owned = { limit = { NOT = {total_pops = 3000 } }
-				add_province_modifier = { name = pandemic_influenza_immunity duration = 425 }
+				add_province_modifier = { name = pandemic_influenza_immunity duration = 318 }
 				}
 			}
 		}

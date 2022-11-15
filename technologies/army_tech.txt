@@ -4,16 +4,15 @@ post_napoleonic_thought = {
 	year = 1836
 	cost = 3600
 	unciv_military = yes
-
-	activate_unit = infantry_defensive
 	
 	activate_building = fort	
 	army_base = {
-		default_organisation = 5
 		supply_consumption = 0.05
 	}
 	dig_in_cap = 1
-	
+	engineer = {
+		support = 0.25
+	} 	
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -53,9 +52,9 @@ strategic_mobility = {
 	year = 1836
 	cost = 7200
 	unciv_military = yes
-	
-	activate_unit = artillery_defensive
-	
+	engineer = {
+		support = 0.25
+	} 
 	army_base = {
 		supply_consumption = 0.05
 	}
@@ -166,10 +165,11 @@ deep_defense_system = {
 	unciv_military = yes
 	engineer = {
 		support = 0.25
-	}
-	army_base = {
-		supply_consumption = 0.05
 	} 
+	army_base = {
+		supply_consumption = 0.10
+	}
+
 	max_fort = 1
 	dig_in_cap = 1
 	
@@ -642,14 +642,6 @@ iron_muzzle_loaded_artillery = {
 		support = 0.25
 		supply_consumption = 0.05
 	}
-	artillery_offensive = {
-		support = 0.25
-		supply_consumption = 0.05
-	}
-	artillery_defensive = {
-		support = 0.25
-		supply_consumption = 0.05
-	}
 	
 	ai_chance = {
 		factor = 1.05
@@ -693,15 +685,6 @@ iron_breech_loaded_artillery = {
 		support = 0.25
 		supply_consumption = 0.05
 	}
-	artillery_offensive = {
-		support = 0.25
-		supply_consumption = 0.05
-	}
-	artillery_defensive = {
-		support = 0.25
-		supply_consumption = 0.05
-	}
-	
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -741,14 +724,6 @@ steel_breech_loaded_artillery = {
 	cost = 14400
 	unciv_military = yes
 	artillery = {
-		support = 0.5
-		supply_consumption = 0.05
-	}
-	artillery_offensive = {
-		support = 0.5
-		supply_consumption = 0.05
-	}
-	artillery_defensive = {
 		support = 0.5
 		supply_consumption = 0.05
 	}
@@ -795,14 +770,6 @@ indirect_artillery_fire = {
 		support = 1
 		supply_consumption = 0.05
 	}
-	artillery_offensive = {
-		support = 1
-		supply_consumption = 0.05
-	}
-	artillery_defensive = {
-		support = 1
-		supply_consumption = 0.05
-	}
 	
 	ai_chance = {
 		factor = 1.05
@@ -843,14 +810,6 @@ heavy_armament_dunno = {
 	cost = 21600
 	unciv_military = yes
 	artillery = {
-		support = 0.5
-		supply_consumption = 0.15
-	}
-	artillery_offensive = {
-		support = 0.5
-		supply_consumption = 0.15
-	}
-	artillery_defensive = {
 		support = 0.5
 		supply_consumption = 0.15
 	}
@@ -897,8 +856,6 @@ military_staff_system = {
 	cost = 3600
 	unciv_military = yes
 	
-	activate_unit = infantry_offensive
-	
 	army_base = {
 		default_organisation = 5
 		supply_consumption = 0.05
@@ -942,8 +899,6 @@ military_plans = {
 	year = 1836
 	cost = 7200
 	unciv_military = yes
-	
-	activate_unit = artillery_offensive
 	
 	army_base = {
 		default_organisation = 5
