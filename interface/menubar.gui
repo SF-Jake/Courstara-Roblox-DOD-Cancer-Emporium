@@ -31,7 +31,7 @@ guiTypes = {
 	iconType = {
 		name = "bg_main_menus"
 		spriteType = "GFX_bg_main_menus"
-		position = { x= 0 y = 0 }
+		position = { x= 2000 y = 2000 }
 		Orientation = "UPPER_LEFT"
 	}
 
@@ -1557,6 +1557,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_mapmode_naval"
 			Orientation = "LOWER_RIGHT"
 			clicksound = click
+			shortcut = "e"
 		}
 }
 

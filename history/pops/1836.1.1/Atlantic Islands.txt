@@ -90,10 +90,10 @@
     }
 }
 #South Georgia (60/15 POPS)
-2133 = {
-    farmers = {
-        culture = beornian
-        religion = protestant
-        size = 15
-    }
-}
+# 2133 = {
+#     farmers = {
+#         culture = beornian
+#         religion = protestant
+#         size = 15
+#     }
+# }

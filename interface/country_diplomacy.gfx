@@ -62,7 +62,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_diplo_select_gp_overlay"
-		texturefile = "gfx\\interface\\diplo_select_gp_overlay.dds"
+		texturefile = "gfx\\interface\\diplo_select_gp_overlay.tga"
 		allwaystransparent = yes
 	}
 	spriteType = {

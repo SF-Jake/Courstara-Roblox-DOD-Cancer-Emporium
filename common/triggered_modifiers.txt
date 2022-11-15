@@ -388,3 +388,89 @@ powerful_HRE = {
 	prestige = -0.50 
 }
 
+########## IMMIGRATION ATTRACTION ##########
+
+great_power_immigration = {
+	trigger = {
+		is_greater_power = yes
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = oceania
+			}
+		}
+	}
+	global_immigrant_attract = 0.5
+	icon = 7
+}
+
+########## Rude boy ##########
+
+badboy1 = {
+	trigger = {
+		badboy = 1
+		NOT = { badboy = 1.2 }
+	}
+	non_accepted_pop_militancy_modifier = 0.04
+	administrative_efficiency_modifier = -0.1
+	tariff_efficiency_modifier = -0.05
+}
+
+badboy2 = {
+	trigger = {
+		badboy = 1.2
+		NOT = { badboy = 1.4 }
+	}
+	non_accepted_pop_militancy_modifier = 0.08
+	administrative_efficiency_modifier = -0.2
+	tariff_efficiency_modifier = -0.1
+}
+
+badboy3 = {
+	trigger = {
+		badboy = 1.4
+		NOT = { badboy = 1.6 }
+	}
+	non_accepted_pop_militancy_modifier = 0.24
+	administrative_efficiency_modifier = -0.6
+	tariff_efficiency_modifier = -0.3
+}
+
+badboy4 = {
+	trigger = {
+		badboy = 1.6
+		NOT = { badboy = 1.8 }
+	}
+	non_accepted_pop_militancy_modifier = 0.32
+	administrative_efficiency_modifier = -0.8
+	tariff_efficiency_modifier = -0.4
+}
+
+badboy5 = {
+	trigger = {
+		badboy = 1.92
+		NOT = { badboy = 2.6 }
+	}
+	non_accepted_pop_militancy_modifier = 0.4
+	administrative_efficiency_modifier = -1
+	tariff_efficiency_modifier = -0.5
+}
+
+badboy6 = {
+	trigger = {
+		badboy = 2.6
+	}
+	non_accepted_pop_militancy_modifier = 0.48
+	administrative_efficiency_modifier = -1.2
+	tariff_efficiency_modifier = -0.6
+}
+
+########## Great Power Infamy Reduction ##########
+
+gp_infamy_reduction = {
+	trigger = {
+		is_greater_power = yes
+	}
+	badboy = -0.01
+}

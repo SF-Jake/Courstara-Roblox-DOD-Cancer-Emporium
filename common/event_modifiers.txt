@@ -2722,3 +2722,34 @@ country_machine_tools = {
 	factory_throughput = 0.05
 	icon = 11
 }
+
+#################### VICTORIA UNIVERSALIS ####################
+
+admin_counter = {
+	icon = 8
+}
+
+banker_income_timer = {
+	icon = 10
+}
+
+monthly_timer = {
+	icon = 8
+}
+
+john_cena_cooldown = {
+	icon = 15
+}
+
+economic_sanctions = {
+	import_cost = 2
+	loan_interest = 3
+	diplomatic_points_modifier = -0.3
+	factory_owner_cost = 0.3
+	global_immigrant_attract = -0.5
+	non_accepted_pop_consciousness_modifier = 0.4
+	non_accepted_pop_militancy_modifier = 0.2
+	political_reform_desire = 0.5
+	cb_generation_speed_modifier = -0.1
+	icon = 8
+}

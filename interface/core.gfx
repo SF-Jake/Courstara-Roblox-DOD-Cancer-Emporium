@@ -27,7 +27,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_icon_religion_small"
-		texturefile = "gfx\\interface\\icon_religion_small.dds"
+		texturefile = "gfx\\interface\\icon_religion_small.tga"
 		noOfFrames = 18
 		loadType = "INGAME"
 	}
@@ -43,7 +43,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pops_small"
 		texturefile = "gfx\\interface\\pops_small.tga"
-		noOfFrames = 13
+		noOfFrames = 14
 		effectFile = "gfx\\FX\\buttonstate.fx"
 		norefcount = yes
 	}
@@ -51,7 +51,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pops_small2"
 		texturefile = "gfx\\interface\\pops_small.tga"
-		noOfFrames = 13
+		noOfFrames = 14
 		effectFile = "gfx\\FX\\buttonstate2.fx"
 		norefcount = yes
 	}
@@ -59,7 +59,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pops_mini"
 		texturefile = "gfx\\interface\\pops_mini.tga"
-		noOfFrames = 13
+		noOfFrames = 14
 		effectFile = "gfx\\FX\\buttonstate.fx"
 		norefcount = yes
 	}
@@ -1212,13 +1212,21 @@ bitmapfont = {
 		fontname = "mapfont_56"
 		color = 0xffffffff	
 	}
-
-	bitmapfont = {
-		name = "mapfont_56_small"
-		fontname = "vic_22_bl"
-		color = 0xff000000	
+bitmapfont = {
+	name = "mapfont_56_small"
+	fontname = "vic_22_bl"
+	color = 0xff000000	
 	}
-
+bitmapfont = {
+		name = "kart_font"
+		fontname = "kart_font"
+		color = 0xffffffff	
+	}
+bitmapfont = {
+	name = "true_mapfont_56_small"
+	fontname = "mapfont_56_small"
+	color = 0xff000000	
+	}
 
 }
 

@@ -3,6 +3,13 @@
 # Special countries...
 REB 	= 	"countries/rebels.txt"
 
+##Utility Tags
+CIV		= "countries/Civilizing.txt"
+GHO		= "countries/Ghost Country.txt"
+SMA		= "countries/Small State CB.txt"
+MST		= "countries/Medium State CB.txt"
+JAN 	= "countries/JanMayen.txt"
+
 ##DoD
 HLR		= "countries/Holy Roman Empire.txt"
 ARC		= "countries/Arcadia.txt" 

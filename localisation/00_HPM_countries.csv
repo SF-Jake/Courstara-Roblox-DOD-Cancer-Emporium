@@ -1035,7 +1035,7 @@ FRA_conservative_3;RÈpublicain modÈrÈ;Fiumani;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;
 FRA_conservative_4;OrlÈaniste;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 FRA_conservative_5;Royaliste;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 FSA;The Free States of America;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-FSA_ADJ;American;êtat libre de Fiume;Fiji;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+FSA_ADJ;American;ùtat libre de Fiume;Fiji;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 FSA_absolute_monarchy;The Free American Empire;Partito Liberale;Fijian;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 FSA_prussian_constitutionalism;The Free American Empire;Partito Autonomo;Fiume;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 FSA_proletarian_dictatorship;The Free American Republic;Nazionalisti;Fiumani;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -4194,3 +4194,13 @@ UCA_absolute_monarchy;Greater Salvador;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 UCA_prussian_constitutionalism;Greater Salvador;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 UCA_hms_government;Greater Salvador;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 pomeranian;Pomeranian;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+GHO;Ghostland;;;;;;;;;;;x
+GHO_ADJ;Ghostly;;;;;;;;;;;x
+JAN;World Bank;;;;;;;;;;;x
+JAN_ADJ;ß;;;;;;;;;;;x
+JAN_liberal;IMF;;;;;;;;;;;x
+JAN_conservative;IMF;;;;;;;;;;;x
+JAN_socialist;IMF;;;;;;;;;;;x
+JAN_anarcho_liberal;International Monetary Fund;;;;;;;;;;;x
+JAN_communist;IMF;;;;;;;;;;;x
+JAN_fascist;IMF;;;;;;;;;;;x

@@ -26,6 +26,7 @@ sea_starts = {
 }
     
 definitions = "../mod/Divergences of Darkness MP v1.0.0/map/definition.csv"
+#definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
 terrain = "terrain.bmp"
