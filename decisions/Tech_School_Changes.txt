@@ -138,6 +138,7 @@ political_decisions = {
 	switch_to_traditional_academic = {
 		alert = no
 		potential = {
+			has_country_flag = show_options_Y
 			NOT = { tech_school = traditional_academic }
 			civilized = yes
 		}

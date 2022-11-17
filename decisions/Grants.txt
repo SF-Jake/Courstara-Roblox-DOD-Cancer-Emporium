@@ -5,6 +5,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			ai = no
+			has_country_flag = show_options_Y
 			NOT = { has_country_flag = will_receive_grants }
 			}
 		
@@ -42,6 +43,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			ai = no
+			has_country_flag = show_options_Y
 			NOT = { has_country_flag = will_give_grants }
 			}
 
@@ -57,6 +59,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			ai = no
+			has_country_flag = show_options_Y
 			has_country_flag = will_give_grants
 		}
 		

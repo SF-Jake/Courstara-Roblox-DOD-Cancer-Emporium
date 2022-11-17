@@ -5,7 +5,7 @@
 
 #Early Classical Theory
 adam_smith = {
-	limit = { early_classical_theory_and_critique = 1 }
+	limit = { romanticism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -24,7 +24,7 @@ adam_smith = {
 }
 
 jean_baptiste_say = {
-	limit = { early_classical_theory_and_critique = 1 }
+	limit = { romanticism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -43,7 +43,7 @@ jean_baptiste_say = {
 }
 
 david_ricardo = {
-	limit = { early_classical_theory_and_critique = 1 }
+	limit = { romanticism = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -67,10 +67,6 @@ floating_international_exchange_rates = {
 		base = 2
 		modifier = {
 			factor = 2
-			keynesian_economics = 1
-		}
-		modifier = {
-			factor = 2
 			year = 1930
 			
 		}
@@ -87,10 +83,6 @@ monetization_of_debt = {
 	limit = { market_determined_exchange_rates = 1 }
 	chance = {
 		base = 2
-		modifier = {
-			factor = 2
-			keynesian_economics = 1
-		}
 		modifier = {
 			factor = 2
 			invention = state_bond_monetary_mechanism

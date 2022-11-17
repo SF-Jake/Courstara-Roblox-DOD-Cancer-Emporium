@@ -29,6 +29,10 @@ political_decisions = {
 				country_event = 91332
 			}
 			any_country = {
+				activate_technology = early_classical_theory_and_critique
+				leadership = 40
+			}
+			any_country = {
 				any_owned = {
 					limit = {
 						state_scope = {

@@ -293,6 +293,94 @@ migration_chance =
 {
 	factor = 0.25
 
+	modifier = {
+		factor = -0.05
+		country = {
+			exists = yes
+			NOT = { has_country_flag = province_migration }
+		}
+	}
+
+	modifier = {
+		factor = 0.2
+		country = {
+			NOT = { total_pops = 1000000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.16
+		country = {
+			total_pops = 1000000
+			NOT = { total_pops = 3500000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.12
+		country = {
+			total_pops = 3500000
+			NOT = { total_pops = 7500000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.07
+		country = {
+			total_pops = 7500000
+			NOT = { total_pops = 17500000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.05
+		country = {
+			total_pops = 17500000
+			NOT = { total_pops = 30000000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.04
+		country = {
+			total_pops = 30000000
+			NOT = { total_pops = 60000000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.03
+		country = {
+			total_pops = 30000000
+			NOT = { total_pops = 60000000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.02
+		country = {
+			total_pops = 60000000
+			NOT = { total_pops = 150000000 }
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+	modifier = {
+		factor = 0.01
+		country = {
+			total_pops = 150000000
+			has_country_flag = province_migration
+			ai = no
+		}
+	}
+
 #If pop group is 70%/80%/90%/99% literacy, is not primary culture, and is in a colony then 2.5% chance to migrate to another state for each threshold. (Chance for colonial pops to migrate to home states once they reach some literacy thresholds)	(10% total)
 	group = {
 		modifier = {

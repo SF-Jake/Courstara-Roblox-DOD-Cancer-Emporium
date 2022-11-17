@@ -1154,7 +1154,10 @@ ideologies = {
 	
 	fascist = {
 	factor = 1
-	
+		modifier = {
+			factor = 2
+			country = { has_country_flag = fascist_influence }
+		}
 		modifier = {
 			factor = 0.25
 			country = { has_country_flag = international_zone }
@@ -1293,6 +1296,10 @@ ideologies = {
 	reactionary = {
 		factor = 1
 		modifier = {
+			factor = 2
+			country = { has_country_flag = reactionary_influence }
+		}
+		modifier = {
 			factor = 0.5
 			not = { militancy = 6 }
 		}
@@ -1393,7 +1400,10 @@ ideologies = {
 
 	conservative = {
 		factor = 1	
-		
+		modifier = {
+			factor = 2
+			country = { has_country_flag = conservative_influence }
+		}
 		modifier = {
 			factor = 10
 			country = { has_country_flag = international_zone }
@@ -1515,6 +1525,10 @@ ideologies = {
 
 	socialist = {
 		factor = 1
+		modifier = {
+			factor = 2
+			country = { has_country_flag = socialist_influence }
+		}
 		modifier = {
 			factor = 1.1
 			nationalvalue = nv_equality
@@ -1749,6 +1763,10 @@ ideologies = {
 	liberal = {
 		factor = 1.1
 		modifier = {
+			factor = 2
+			country = { has_country_flag = liberal_influence }
+		}
+		modifier = {
 			factor = 0.9
 			OR = { is_accepted_culture = yes is_primary_culture = yes }
 			OR = {
@@ -1874,7 +1892,10 @@ ideologies = {
 	}
 	anarcho_liberal = {
 		factor = 1
-		
+		modifier = {
+			factor = 2
+			country = { has_country_flag = anarcho_liberal_influence }
+		}
 		modifier = {
 			factor = 0.25
 			country = { has_country_flag = international_zone }
