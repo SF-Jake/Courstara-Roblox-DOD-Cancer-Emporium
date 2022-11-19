@@ -35,7 +35,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -74,7 +75,7 @@ malthusian_thought = 1
 enlightenment_thought = 1
 introspectionism = 1
 private_banks = 1
-no_standard = 1
+ 
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
@@ -152,7 +153,7 @@ school_reforms = low_schools
 	
 	private_banks = 1
 	no_standard = 1
-	ad_hoc_money_bill_printing = 1
+	 
 	early_classical_theory_and_critique = 1
 	late_classical_theory = 1
 	freedom_of_trade = 1

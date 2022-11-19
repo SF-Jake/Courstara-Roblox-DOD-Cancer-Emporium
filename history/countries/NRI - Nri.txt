@@ -50,7 +50,7 @@ upper_house = {
 # Inventions
 
 # Technologies
-early_classical_theory_and_critique = 1
+ 
 
 # Starting Consciousness
 consciousness = 0

@@ -1654,6 +1654,134 @@ province_event = {
 	}
 }
 
+country_event = {
+	id = 13202
+	title = "EVTNAME13202"
+	desc = "EVTDESC13202"
+	picture = "genevaconvention"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT13202OPTA"
+		badboy = 2
+		leave_alliance = FROM
+		random_country = {
+			limit = {
+				tag = FROM
+				vassal_of = THIS
+			}
+			THIS = {
+				release_vassal = FROM
+				casus_belli = { target = FROM type = make_puppet months = 120 }
+			}
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}
+		random_country = {
+			limit = { tag = FROM NOT = { total_pops = 50000000 } }
+			add_casus_belli = {
+				target = THIS
+				type = add_to_sphere
+				months = 12
+			}
+		}
+		random_country = {
+			limit = { tag = FROM total_pops = 50000000 }
+			add_casus_belli = {
+				target = THIS
+				type = war_reparations
+				months = 12
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { ai = yes }
+				FROM = { NOT = { total_pops = 50000000 } }
+			}
+			owner = {
+				war = {
+					target = FROM
+					attacker_goal = {
+						casus_belli = add_to_sphere
+					}
+					call_ally = yes
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { ai = no }
+				FROM = { NOT = { total_pops = 50000000 } }
+			}
+			owner = {
+				war = {
+					target = FROM
+					attacker_goal = {
+						casus_belli = add_to_sphere
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				FROM = {
+					NOT = { neighbour = THIS }
+					NOT = { any_owned_province = { port = yes } }
+					NOT = {	any_neighbor_country = { alliance_with = THIS } }
+				}
+			}
+			modifier = {
+				factor = 0.1
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.92
+				NOT = {
+					government = fascist_dictatorship
+					government = proletarian_dictatorship
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT13202OPTB"
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}
+		prestige_factor = -0.1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					government = fascist_dictatorship
+					government = proletarian_dictatorship
+				}
+			}
+		}
+	}
+}
+
 #Foreign Diplomat killed
 province_event = {
 	id = 13230

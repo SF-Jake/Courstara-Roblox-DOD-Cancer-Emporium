@@ -45,7 +45,7 @@ upper_house = {
 
 # Level_3
 # Technologies
-early_classical_theory_and_critique = 1
+ 
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 private_banks = 1

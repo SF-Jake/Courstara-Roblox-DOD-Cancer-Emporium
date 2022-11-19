@@ -2847,14 +2847,14 @@ switched_production = {
 }
 
 agriculture_expansion = {
-	local_RGO_output = 0.35
-	local_RGO_throughput = 0.35
+	local_RGO_output = 0.15
+	local_RGO_throughput = 0.15
 	icon = 13
 }
 
 mine_expansion = {
-	local_RGO_output = 0.35
-	local_RGO_throughput = 0.35
+	local_RGO_output = 0.15
+	local_RGO_throughput = 0.15
 	icon = 13
 }
 

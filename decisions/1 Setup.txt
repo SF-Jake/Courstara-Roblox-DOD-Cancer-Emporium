@@ -29,6 +29,7 @@ political_decisions = {
 				country_event = 91332
 			}
 			any_country = {
+				limit = { civilized = yes }
 				activate_technology = early_classical_theory_and_critique
 				leadership = 40
 			}

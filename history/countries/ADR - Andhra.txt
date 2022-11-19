@@ -44,7 +44,7 @@ upper_house = {
 
 # Level_2
 # Technologies
-early_classical_theory_and_critique = 1
+ 
 
 # Inventions
 

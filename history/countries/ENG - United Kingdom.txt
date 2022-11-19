@@ -32,7 +32,8 @@ school_reforms = low_schools
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = colonial_transportation
-child_labor = child_labor_restrictedcitizens_rights = primary_culture_only
+child_labor = child_labor_restricted
+citizens_rights = primary_culture_only
 border_policy = quota_immigration
 
 set_country_flag = catholic_country
@@ -50,7 +51,7 @@ naval_design_bureaus = 1
 alphabetic_flag_signaling = 1
 the_command_principle = 1
 private_banks = 1
-no_standard = 1
+ 
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
@@ -184,7 +185,7 @@ school_reforms = low_schools
 	business_banks = 1
 	no_standard = 1
 	ad_hoc_money_bill_printing = 1
-	private_bank_money_bill_printing = 1
+	 
 	early_classical_theory_and_critique = 1
 	late_classical_theory = 1
 	freedom_of_trade = 1

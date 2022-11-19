@@ -33,7 +33,7 @@ border_policy = closed_borders
 
 # Level_2
 # Technologies
-early_classical_theory_and_critique = 1
+ 
 late_enlightenment_philosophy = 1
 
 # Inventions

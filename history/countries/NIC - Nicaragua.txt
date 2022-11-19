@@ -31,7 +31,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -71,7 +72,7 @@ set_country_flag = new_world_nation
 	the_command_principle = 1
 	
 	private_banks = 1
-	no_standard = 1
+	 
 	early_classical_theory_and_critique = 1
 	late_classical_theory = 1
 	freedom_of_trade = 1 

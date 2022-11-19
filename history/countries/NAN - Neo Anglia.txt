@@ -69,7 +69,7 @@ private_banks = 1
 stock_exchange = 1 
 muzzle_loaded_rifles = 1
 no_standard = 1
-early_classical_theory_and_critique = 1
+ 
 freedom_of_trade = 1
 guild_based_production = 1
 piston_steam_engine = 1

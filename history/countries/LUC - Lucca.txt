@@ -32,7 +32,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -66,7 +67,7 @@ malthusian_thought = 1
 enlightenment_thought = 1
 introspectionism = 1
 private_banks = 1
-no_standard = 1
+ 
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
@@ -91,7 +92,7 @@ oob = "LUC_oob.txt"
 	military_staff_system = 1
 	army_command_principle = 1
 	private_banks = 1
-	no_standard = 1
+	 
 	early_classical_theory_and_critique = 1
 	freedom_of_trade = 1
 	guild_based_production = 1
