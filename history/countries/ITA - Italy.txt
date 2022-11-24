@@ -89,7 +89,7 @@ upper_house = {
 	stock_exchange = 1
 	no_standard = 1
 	 
-	early_classical_theory_and_critique = 1
+	 
 	late_classical_theory = 1
 	freedom_of_trade = 1
 	guild_based_production = 1

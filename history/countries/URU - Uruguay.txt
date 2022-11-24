@@ -117,7 +117,7 @@ ruling_party = URU_conservative_2
 	no_standard = 1
 	ad_hoc_money_bill_printing = 1
 	 
-	early_classical_theory_and_critique = 1
+	 
 	late_classical_theory = 1
 	freedom_of_trade = 1
 	market_structure = 1

@@ -3439,22 +3439,6 @@ bureaucrats_fix_cooldown;Non-Accepted Bureaucrats Fix Cooldown;;;;;;;;;;;;x,,,,,
 bureaucrats_fix_cooldown_desc;Non-Accepted Bureaucrats Fix Cooldown is 10 years.;;;;;;;;;;;;;x,,,,,,,,,,,,;;;;;;;;;;;
 bureaucrats_fix_title;§YNon-Accepted Bureacrats (10 year cooldown);;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 bureaucrats_fix_desc;Turns unaccepted bureacrats into artisans;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-pensions;Tariffs;;;;;;;;;;;;;;
-no_pensions;No Tariffs;;;;;;;;;;;;;;
-no_pensions_desc; ;;;;;;;;;;;;;;
-trinket_pensions;Trinket Tariffs ;;;;;;;;;;;;;;
-trinket_pensions_desc; ;;;;;;;;;;;;;;
-low_pensions;Low Tariffs;;;;;;;;;;;;;;
-low_pensions_desc; ;;;;;;;;;;;;;;
-acceptable_pensions;Medium Tariffs;;;;;;;;;;;;;;
-acceptable_pensions_desc; ;;;;;;;;;;;;;;
-good_pensions;Max Tariffs;;;;;;;;;;;;;;
-good_pensions_desc; ;;;;;;;;;;;;;;
-no_pensions_l;No Tariffs;;;;;;;;;;;;;;
-trinket_pensions_l;Trinket Tariffs ;;;;;;;;;;;;;;
-low_pensions_l;Low Tariffs;;;;;;;;;;;;;;
-acceptable_pensions_l;Medium Tariffs;;;;;;;;;;;;;;
-good_pensions_l;Max Tariffs;;;;;;;;;;;;;;
 EVTNAMEno_standard;Official Currencies Tech Flag;;;;;;;;;;;;x
 EVTDESCno_standard;This tech allows you to enact trinket tariffs.;;;;;;;;;;;;x
 no_standard_invented;Official Currencies Invented.;;;;;;;;;;;;
