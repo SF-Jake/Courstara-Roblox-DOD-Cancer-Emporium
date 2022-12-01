@@ -1260,10 +1260,9 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
-					}
+				}
 				}
 			}
 		}
@@ -1277,7 +1276,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1303,7 +1301,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1321,7 +1318,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1341,7 +1337,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1359,7 +1354,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1383,7 +1377,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1404,7 +1397,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1440,7 +1432,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1459,7 +1450,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1480,7 +1470,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1499,7 +1488,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1524,7 +1512,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1546,7 +1533,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1582,7 +1568,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1601,7 +1586,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1622,7 +1606,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1641,7 +1624,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1666,7 +1648,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1688,7 +1669,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1724,7 +1704,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1743,7 +1722,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1764,7 +1742,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1783,7 +1760,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1808,7 +1784,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1830,7 +1805,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1866,7 +1840,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1885,7 +1858,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -1906,7 +1878,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1925,7 +1896,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1950,7 +1920,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -1972,7 +1941,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2008,7 +1976,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2027,7 +1994,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2048,7 +2014,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2067,7 +2032,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2092,7 +2056,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2114,7 +2077,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2150,7 +2112,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2169,7 +2130,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2190,7 +2150,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2209,7 +2168,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2234,7 +2192,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2256,7 +2213,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2292,7 +2248,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2311,7 +2266,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2332,7 +2286,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2351,7 +2304,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2376,7 +2328,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2398,7 +2349,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2434,7 +2384,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2453,7 +2402,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2474,7 +2422,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2493,7 +2440,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2518,7 +2464,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2540,7 +2485,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2576,7 +2520,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2595,7 +2538,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2616,7 +2558,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2635,7 +2576,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2660,7 +2600,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2682,7 +2621,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2718,7 +2656,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2737,7 +2674,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2759,7 +2695,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2778,7 +2713,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2803,7 +2737,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2825,7 +2758,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2861,7 +2793,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2880,7 +2811,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -2902,7 +2832,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2921,7 +2850,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2946,7 +2874,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -2968,7 +2895,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3004,7 +2930,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3023,7 +2948,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3045,7 +2969,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3064,7 +2987,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3089,7 +3011,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3111,7 +3032,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3147,7 +3067,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3166,7 +3085,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3188,7 +3106,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3207,7 +3124,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3232,7 +3148,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3254,7 +3169,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3290,7 +3204,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3309,7 +3222,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3331,7 +3243,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3350,7 +3261,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3375,7 +3285,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3397,7 +3306,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3432,7 +3340,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3450,7 +3357,6 @@ zdismantle_supply_depot = {
 						trade_goods = iron
 						trade_goods = sulphur
 						trade_goods = oil
-						trade_goods = market_goods
 						trade_goods = precious_metal
 						trade_goods = tropical_wood
 					}
@@ -3472,7 +3378,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3490,7 +3395,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3514,7 +3418,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
@@ -3535,7 +3438,6 @@ zdismantle_supply_depot = {
 							trade_goods = iron
 							trade_goods = sulphur
 							trade_goods = oil
-							trade_goods = market_goods
 							trade_goods = precious_metal
 							trade_goods = tropical_wood
 						}
