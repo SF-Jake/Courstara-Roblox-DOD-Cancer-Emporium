@@ -3,6 +3,7 @@ political_decisions = {
 		alert = yes
 		picture = lightbulb_off
 		potential = {
+			has_country_flag = show_options_Y
 			NOT = {	has_country_flag = tech_school_change }
 			civilized = yes
 		}
@@ -32,6 +33,7 @@ political_decisions = {
 		alert = no
 		picture = lightbulb_on
 		potential = {
+			has_country_flag = show_options_Y
 			has_country_flag = tech_school_change
 		}
 		
@@ -59,6 +61,7 @@ political_decisions = {
 #				has_country_modifier = academic_confusion
 #			}
 			has_country_flag = tech_school_change
+			has_country_flag = show_options_Y
 #			tech_school = traditional_academic
 			NOT = { tech_school = army_tech_school }
 		}
@@ -97,6 +100,7 @@ political_decisions = {
 #				has_country_modifier = academic_confusion
 #			}
 			has_country_flag = tech_school_change
+			has_country_flag = show_options_Y
 #			tech_school = traditional_academic
 			NOT = { tech_school = naval_tech_school }
 		}
@@ -133,6 +137,7 @@ political_decisions = {
 #				has_country_modifier = academic_confusion
 #			}
 			has_country_flag = tech_school_change
+			has_country_flag = show_options_Y
 #			tech_school = traditional_academic
 			NOT = { tech_school = culture_tech_school }
 		}
@@ -168,6 +173,7 @@ political_decisions = {
 #				has_country_modifier = academic_confusion
 #			}
 			has_country_flag = tech_school_change
+			has_country_flag = show_options_Y
 #			tech_school = traditional_academic
 			NOT = { tech_school = commerce_tech_school }
 		}
@@ -204,6 +210,7 @@ political_decisions = {
 #				has_country_modifier = academic_confusion
 #			}
 			has_country_flag = tech_school_change
+			has_country_flag = show_options_Y
 #			tech_school = traditional_academic
 			NOT = { tech_school = industrial_tech_school }
 		}
@@ -232,6 +239,7 @@ political_decisions = {
 #			}
 #			civilized = yes
 			has_country_flag = tech_school_change
+			has_country_flag = show_options_Y
 			NOT = { tech_school = traditional_academic }
 		}
 		

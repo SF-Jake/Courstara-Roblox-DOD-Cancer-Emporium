@@ -4,6 +4,7 @@ political_decisions = {
 		alert = yes
 		picture = lightbulb_off
 		potential = {
+			has_country_flag = show_options_Y
 			NOT = {	has_country_flag = nv_change }
 			ai = no
 		}
@@ -33,6 +34,7 @@ political_decisions = {
 		alert = no
 		picture = lightbulb_on
 		potential = {
+			has_country_flag = show_options_Y
 			has_country_flag = nv_change
 			ai = no
 		}
@@ -49,6 +51,7 @@ political_decisions = {
 		potential = {
 			NOT = { nationalvalue = nv_diplomacy }
 			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = show_options_Y
 			has_country_flag = nv_change
 		}
 		
@@ -90,6 +93,7 @@ political_decisions = {
 		potential = {
 			NOT = { nationalvalue = nv_education }
 			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = show_options_Y
 			has_country_flag = nv_change
 			ai = no
 		}
@@ -132,6 +136,7 @@ political_decisions = {
 		potential = {
 			NOT = { nationalvalue = nv_order }
 			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = show_options_Y
 			has_country_flag = nv_change
 			ai = no
 		}
@@ -174,6 +179,7 @@ political_decisions = {
 		potential = {
 			NOT = { nationalvalue = nv_productivity }
 			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = show_options_Y
 			has_country_flag = nv_change
 			ai = no
 		}
@@ -216,6 +222,7 @@ political_decisions = {
 		potential = {
 			NOT = { nationalvalue = nv_equality }
 			#NOT = { has_country_flag = switched_nv }
+			has_country_flag = show_options_Y
 			has_country_flag = nv_change
 			ai = no
 		}

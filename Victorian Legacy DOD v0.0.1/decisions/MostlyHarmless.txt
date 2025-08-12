@@ -1,0 +1,5001 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+political_decisions = {
+	province_selector_event = {
+		potential = {
+			tag = JAN
+			META_1 = {
+				owner = {
+					ai = no
+					any_owned_province = { has_building = province_selector }
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = no
+					any_owned_province = { 
+						has_building = province_selector 
+					}
+					NOT = { has_country_flag = province_selector }
+				}
+				set_country_flag = province_selector
+				random_owned = {
+					limit = {
+						has_building = province_selector
+					}
+					province_event = {
+						## Audax Validator "." Ignore_NEXT
+						id = 92104 days = 0
+					}
+				}
+			}
+		}
+	}
+
+	tier_focus_unlock = {
+		picture = tier_focus_unloack
+	
+		potential = { 
+			tag = JAN
+		}
+	
+		allow = {
+			META_1 = {
+				owner = {
+					OR = {
+						AND = {
+							invention = pop_shift_invention_2
+							NOT = {	has_country_flag = tier_2 }
+						}
+						AND = {
+							invention = pop_shift_invention_3
+							NOT = {	has_country_flag = tier_3 }
+						}
+						AND = {
+							invention = pop_shift_invention_4
+							NOT = {	has_country_flag = tier_4 }
+						}
+						AND = {
+							invention = pop_shift_invention_5
+							NOT = {	has_country_flag = tier_5 }
+						}
+						AND = {
+							invention = pop_shift_invention_6
+							NOT = {	has_country_flag = tier_6 }
+						}
+					}
+				}
+			}
+		}
+	
+		effect = {
+			any_country = {
+				limit = {
+					invention = pop_shift_invention_2
+					NOT = {	has_country_flag = tier_2 }
+				}
+				set_country_flag = tier_2
+			}
+			any_country = {
+				limit = {
+					invention = pop_shift_invention_3
+					NOT = {	has_country_flag = tier_3 }
+				}
+				set_country_flag = tier_3
+			}
+			any_country = {
+				limit = {
+					invention = pop_shift_invention_4
+					NOT = {	has_country_flag = tier_4 }
+				}
+				set_country_flag = tier_4
+			}
+			any_country = {
+				limit = {
+					invention = pop_shift_invention_5
+					NOT = {	has_country_flag = tier_5 }
+				}
+				set_country_flag = tier_5
+			}
+			any_country = {
+				limit = {
+					invention = pop_shift_invention_6
+					NOT = {	has_country_flag = tier_6 }
+				}
+				set_country_flag = tier_6
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	technology_flag = {
+		picture = technology_flag
+	
+		potential = { 
+			tag = JAN
+		}
+	
+		allow = {
+			META_1 = {
+				owner = {
+					OR = {
+						AND = {
+							medicine = 1
+							NOT = { has_country_flag = medicine_invented }
+						}
+						AND = {
+							inorganic_chemistry = 1
+							NOT = { has_country_flag = inorganic_chemistry_invented }
+						}
+						AND = {
+							organic_chemistry = 1
+							NOT = { has_country_flag = organic_chemistry_invented }
+						}
+						AND = {
+							electricity = 1
+							NOT = { has_country_flag = electricity_invented }
+						}
+						AND = {
+							synthetic_polymers = 1
+							NOT = { has_country_flag = synthetic_polymers_invented }
+						}
+					}
+				}
+			}
+		}
+	
+		effect = {
+			any_country = {
+				limit  = {
+					medicine = 1
+					NOT = { has_country_flag = medicine_invented }
+				}
+				set_country_flag = medicine_invented
+			}
+			any_country = {
+				limit  = {
+					inorganic_chemistry = 1
+					NOT = { has_country_flag = inorganic_chemistry_invented }
+				}
+				set_country_flag = inorganic_chemistry_invented
+			}
+			any_country = {
+				limit  = {
+					organic_chemistry = 1
+					NOT = { has_country_flag = organic_chemistry_invented }
+				}
+				set_country_flag = organic_chemistry_invented
+			}
+			any_country = {
+				limit  = {
+					electricity = 1
+					NOT = { has_country_flag = electricity_invented }
+				}
+				set_country_flag = electricity_invented
+			}
+			any_country = {
+				limit  = {
+					synthetic_polymers = 1
+					NOT = { has_country_flag = synthetic_polymers_invented }
+				}
+				set_country_flag = synthetic_polymers_invented
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	lose_mob_modifier = {
+		potential = {
+			tag = JAN
+		}
+		allow = {
+			META_1 = {
+				owner = {
+					ai = no
+					OR = {
+						is_mobilised = no
+						OR = {
+							war_with = DUA
+							war_with = BRG
+							war_with = ARN
+							war_with = CAE
+							war_with = IBE
+							war_with = ARI
+							war_with = ARY
+							war_with = ARC
+							war_with = AZL
+							war_with = TKS
+							war_with = LST
+							war_with = TAR
+							war_with = IDC
+							war_with = ENG
+							war_with = RUS
+							war_with = FRA
+							war_with = PRU
+							war_with = GER
+							war_with = AUS
+							war_with = USA
+							war_with = JAP
+							war_with = ITA
+							war_with = AIT
+							war_with = KUK
+							war_with = DEN
+							war_with = FIN
+							war_with = NOR
+							war_with = SCA
+							war_with = SWE
+							war_with = PSV
+							war_with = BEL
+							war_with = CAT
+							war_with = FLA
+							war_with = IRE
+							war_with = NET
+							war_with = POR
+							war_with = SCO
+							war_with = SPA
+							war_with = WLL
+							war_with = PRV
+							war_with = OCC
+							war_with = WLS
+							war_with = BRT
+							war_with = ANH
+							war_with = BAD
+							war_with = BAV
+							war_with = BRA
+							war_with = BRE
+							war_with = COB
+							war_with = DZG
+							war_with = FRM
+							war_with = HAM
+							war_with = HAN
+							war_with = HES
+							war_with = HEK
+							war_with = HOL
+							war_with = LIP
+							war_with = LUB
+							war_with = LUX
+							war_with = MEC
+							war_with = MEI
+							war_with = NAS
+							war_with = NGF
+							war_with = OLD
+							war_with = SAX
+							war_with = SCH
+							war_with = SGF
+							war_with = WEI
+							war_with = WUR
+							war_with = RHI
+							war_with = POM
+							war_with = MNR
+							war_with = THU
+							war_with = BEG
+							war_with = FRI
+							war_with = BRN
+							war_with = TIR
+							war_with = LOM
+							war_with = LUC
+							war_with = MOD
+							war_with = PAP
+							war_with = PAR
+							war_with = SAR
+							war_with = SIC
+							war_with = TRE
+							war_with = TUS
+							war_with = VEN
+							war_with = FRR
+							war_with = BOH
+							war_with = KRA
+							war_with = CRI
+							war_with = EST
+							war_with = HUN
+							war_with = LIT
+							war_with = LAT
+							war_with = POL
+							war_with = SLV
+							war_with = SWI
+							war_with = RUT
+							war_with = SIE
+							war_with = UKR
+							war_with = CZH
+							war_with = NOV
+							war_with = MUS
+							war_with = ASK
+							war_with = ALB
+							war_with = BOS
+							war_with = BUL
+							war_with = CRE
+							war_with = CRO
+							war_with = CYP
+							war_with = GRE
+							war_with = ION
+							war_with = MOL
+							war_with = MON
+							war_with = ROM
+							war_with = SER
+							war_with = SLO
+							war_with = TUR
+							war_with = WAL
+							war_with = YUG
+							war_with = MAC
+							war_with = ALD
+							war_with = CNG
+							war_with = EGY
+							war_with = ETH
+							war_with = MAD
+							war_with = LIB
+							war_with = MOR
+							war_with = NAL
+							war_with = ORA
+							war_with = SAF
+							war_with = SOK
+							war_with = RHO
+							war_with = TRI
+							war_with = TRN
+							war_with = TUN
+							war_with = ZAN
+							war_with = ZUL
+							war_with = SOM
+							war_with = BSH
+							war_with = MAT
+							war_with = XHO
+							war_with = SUA
+							war_with = SHO
+							war_with = ABU
+							war_with = AFG
+							war_with = ARM
+							war_with = AZB
+							war_with = BUK
+							war_with = GEO
+							war_with = HDJ
+							war_with = IRQ
+							war_with = KHI
+							war_with = KOK
+							war_with = MUG
+							war_with = NEJ
+							war_with = OMA
+							war_with = PER
+							war_with = YEM
+							war_with = NOG
+							war_with = SIB
+							war_with = CHG
+							war_with = AFS
+							war_with = KZH
+							war_with = HND
+							war_with = AWA
+							war_with = BAS
+							war_with = BER
+							war_with = BHO
+							war_with = BIK
+							war_with = BUN
+							war_with = GWA
+							war_with = HYD
+							war_with = IND
+							war_with = JAI
+							war_with = JAS
+							war_with = JOD
+							war_with = KAL
+							war_with = KAS
+							war_with = KUT
+							war_with = LAD
+							war_with = MAK
+							war_with = MEW
+							war_with = MYS
+							war_with = NAG
+							war_with = NEP
+							war_with = ORI
+							war_with = PNJ
+							war_with = SHI
+							war_with = SIK
+							war_with = SIN
+							war_with = TRA
+							war_with = VIJ
+							war_with = MDR
+							war_with = ATJ
+							war_with = BAL
+							war_with = BHU
+							war_with = BRU
+							war_with = BUR
+							war_with = CAM
+							war_with = CHI
+							war_with = DAI
+							war_with = JAV
+							war_with = KOR
+							war_with = LUA
+							war_with = JOH
+							war_with = SIA
+							war_with = TIB
+							war_with = MGL
+							war_with = WIA
+							war_with = PHL
+							war_with = MCK
+							war_with = GXI
+							war_with = SXI
+							war_with = YNN
+							war_with = XBI
+							war_with = XIN
+							war_with = CAL
+							war_with = COM
+							war_with = CAN
+							war_with = CHE
+							war_with = COL
+							war_with = COS
+							war_with = CSA
+							war_with = CUB
+							war_with = DES
+							war_with = DOM
+							war_with = ELS
+							war_with = GUA
+							war_with = HAI
+							war_with = HAW
+							war_with = MAN
+							war_with = MEX
+							war_with = MTC
+							war_with = HON
+							war_with = NEN
+							war_with = NEW
+							war_with = NIC
+							war_with = PNM
+							war_with = QUE
+							war_with = TEX
+							war_with = UCA
+							war_with = DNG
+							war_with = VIN
+							war_with = PLA
+							war_with = NBG
+							war_with = KKN
+							war_with = KAM
+							war_with = ARG
+							war_with = BOL
+							war_with = BRZ
+							war_with = CHL
+							war_with = CLM
+							war_with = ECU
+							war_with = PEU
+							war_with = PRG
+							war_with = URU
+							war_with = VNZ
+							war_with = PBC
+							war_with = GRA
+							war_with = INC
+							war_with = AMA
+							war_with = LOT
+							war_with = NAN
+							war_with = AST
+							war_with = NZL
+							war_with = BTV
+							war_with = YLO
+							war_with = MJN
+							war_with = ZSA
+							war_with = AOT
+							war_with = ISR
+							war_with = BYZ
+							war_with = ICL
+							war_with = BAB
+							war_with = TPG
+							war_with = ARA
+							war_with = UBD
+							war_with = BYE
+							war_with = PLC
+							war_with = GCO
+							war_with = JAN
+							war_with = HUI
+							war_with = ASM
+							war_with = BIH
+							war_with = BNG
+							war_with = KRN
+							war_with = MAH
+							war_with = CIR
+							war_with = FIJ
+							war_with = FJN
+							war_with = GNG
+							war_with = HNN
+							war_with = SZC
+							war_with = SRI
+							war_with = TGA
+							war_with = DJA
+							war_with = INO
+							war_with = KLM
+							war_with = SAK
+							war_with = SLW
+							war_with = SYR
+							war_with = CPL
+							war_with = PBA
+							war_with = PRI
+							war_with = RPL
+							war_with = WIF
+							war_with = YUC
+							war_with = BEN
+							war_with = OYO
+						}
+					}
+					OR = {
+						has_country_flag = mob1
+						has_country_flag = mob2
+						has_country_flag = mob3
+						has_country_flag = mob4
+						has_country_flag = mob5
+						has_country_flag = mob6
+						has_country_flag = mob7
+						has_country_flag = mob8
+						has_country_modifier = is_mobbed1
+						has_country_modifier = is_mobbed2
+						has_country_modifier = is_mobbed3
+						has_country_modifier = is_mobbed4
+						has_country_modifier = is_mobbed5
+						has_country_modifier = is_mobbed6
+						has_country_modifier = is_mobbed7
+						has_country_modifier = is_mobbed8
+					}
+				}
+			}
+		}
+		effect = {
+			random_country = {
+				limit = {
+					ai = no
+					OR = {
+						is_mobilised = no
+						OR = {
+							war_with = DUA
+							war_with = BRG
+							war_with = ARN
+							war_with = CAE
+							war_with = IBE
+							war_with = ARI
+							war_with = ARY
+							war_with = ARC
+							war_with = AZL
+							war_with = TKS
+							war_with = LST
+							war_with = TAR
+							war_with = IDC
+							war_with = ENG
+							war_with = RUS
+							war_with = FRA
+							war_with = PRU
+							war_with = GER
+							war_with = AUS
+							war_with = USA
+							war_with = JAP
+							war_with = ITA
+							war_with = AIT
+							war_with = KUK
+							war_with = DEN
+							war_with = FIN
+							war_with = NOR
+							war_with = SCA
+							war_with = SWE
+							war_with = PSV
+							war_with = BEL
+							war_with = CAT
+							war_with = FLA
+							war_with = IRE
+							war_with = NET
+							war_with = POR
+							war_with = SCO
+							war_with = SPA
+							war_with = WLL
+							war_with = PRV
+							war_with = OCC
+							war_with = WLS
+							war_with = BRT
+							war_with = ANH
+							war_with = BAD
+							war_with = BAV
+							war_with = BRA
+							war_with = BRE
+							war_with = COB
+							war_with = DZG
+							war_with = FRM
+							war_with = HAM
+							war_with = HAN
+							war_with = HES
+							war_with = HEK
+							war_with = HOL
+							war_with = LIP
+							war_with = LUB
+							war_with = LUX
+							war_with = MEC
+							war_with = MEI
+							war_with = NAS
+							war_with = NGF
+							war_with = OLD
+							war_with = SAX
+							war_with = SCH
+							war_with = SGF
+							war_with = WEI
+							war_with = WUR
+							war_with = RHI
+							war_with = POM
+							war_with = MNR
+							war_with = THU
+							war_with = BEG
+							war_with = FRI
+							war_with = BRN
+							war_with = TIR
+							war_with = LOM
+							war_with = LUC
+							war_with = MOD
+							war_with = PAP
+							war_with = PAR
+							war_with = SAR
+							war_with = SIC
+							war_with = TRE
+							war_with = TUS
+							war_with = VEN
+							war_with = FRR
+							war_with = BOH
+							war_with = KRA
+							war_with = CRI
+							war_with = EST
+							war_with = HUN
+							war_with = LIT
+							war_with = LAT
+							war_with = POL
+							war_with = SLV
+							war_with = SWI
+							war_with = RUT
+							war_with = SIE
+							war_with = UKR
+							war_with = CZH
+							war_with = NOV
+							war_with = MUS
+							war_with = ASK
+							war_with = ALB
+							war_with = BOS
+							war_with = BUL
+							war_with = CRE
+							war_with = CRO
+							war_with = CYP
+							war_with = GRE
+							war_with = ION
+							war_with = MOL
+							war_with = MON
+							war_with = ROM
+							war_with = SER
+							war_with = SLO
+							war_with = TUR
+							war_with = WAL
+							war_with = YUG
+							war_with = MAC
+							war_with = ALD
+							war_with = CNG
+							war_with = EGY
+							war_with = ETH
+							war_with = MAD
+							war_with = LIB
+							war_with = MOR
+							war_with = NAL
+							war_with = ORA
+							war_with = SAF
+							war_with = SOK
+							war_with = RHO
+							war_with = TRI
+							war_with = TRN
+							war_with = TUN
+							war_with = ZAN
+							war_with = ZUL
+							war_with = SOM
+							war_with = BSH
+							war_with = MAT
+							war_with = XHO
+							war_with = SUA
+							war_with = SHO
+							war_with = ABU
+							war_with = AFG
+							war_with = ARM
+							war_with = AZB
+							war_with = BUK
+							war_with = GEO
+							war_with = HDJ
+							war_with = IRQ
+							war_with = KHI
+							war_with = KOK
+							war_with = MUG
+							war_with = NEJ
+							war_with = OMA
+							war_with = PER
+							war_with = YEM
+							war_with = NOG
+							war_with = SIB
+							war_with = CHG
+							war_with = AFS
+							war_with = KZH
+							war_with = HND
+							war_with = AWA
+							war_with = BAS
+							war_with = BER
+							war_with = BHO
+							war_with = BIK
+							war_with = BUN
+							war_with = GWA
+							war_with = HYD
+							war_with = IND
+							war_with = JAI
+							war_with = JAS
+							war_with = JOD
+							war_with = KAL
+							war_with = KAS
+							war_with = KUT
+							war_with = LAD
+							war_with = MAK
+							war_with = MEW
+							war_with = MYS
+							war_with = NAG
+							war_with = NEP
+							war_with = ORI
+							war_with = PNJ
+							war_with = SHI
+							war_with = SIK
+							war_with = SIN
+							war_with = TRA
+							war_with = VIJ
+							war_with = MDR
+							war_with = ATJ
+							war_with = BAL
+							war_with = BHU
+							war_with = BRU
+							war_with = BUR
+							war_with = CAM
+							war_with = CHI
+							war_with = DAI
+							war_with = JAV
+							war_with = KOR
+							war_with = LUA
+							war_with = JOH
+							war_with = SIA
+							war_with = TIB
+							war_with = MGL
+							war_with = WIA
+							war_with = PHL
+							war_with = MCK
+							war_with = GXI
+							war_with = SXI
+							war_with = YNN
+							war_with = XBI
+							war_with = XIN
+							war_with = CAL
+							war_with = COM
+							war_with = CAN
+							war_with = CHE
+							war_with = COL
+							war_with = COS
+							war_with = CSA
+							war_with = CUB
+							war_with = DES
+							war_with = DOM
+							war_with = ELS
+							war_with = GUA
+							war_with = HAI
+							war_with = HAW
+							war_with = MAN
+							war_with = MEX
+							war_with = MTC
+							war_with = HON
+							war_with = NEN
+							war_with = NEW
+							war_with = NIC
+							war_with = PNM
+							war_with = QUE
+							war_with = TEX
+							war_with = UCA
+							war_with = DNG
+							war_with = VIN
+							war_with = PLA
+							war_with = NBG
+							war_with = KKN
+							war_with = KAM
+							war_with = ARG
+							war_with = BOL
+							war_with = BRZ
+							war_with = CHL
+							war_with = CLM
+							war_with = ECU
+							war_with = PEU
+							war_with = PRG
+							war_with = URU
+							war_with = VNZ
+							war_with = PBC
+							war_with = GRA
+							war_with = INC
+							war_with = AMA
+							war_with = LOT
+							war_with = NAN
+							war_with = AST
+							war_with = NZL
+							war_with = BTV
+							war_with = YLO
+							war_with = MJN
+							war_with = ZSA
+							war_with = AOT
+							war_with = ISR
+							war_with = BYZ
+							war_with = ICL
+							war_with = BAB
+							war_with = TPG
+							war_with = ARA
+							war_with = UBD
+							war_with = BYE
+							war_with = PLC
+							war_with = GCO
+							war_with = JAN
+							war_with = HUI
+							war_with = ASM
+							war_with = BIH
+							war_with = BNG
+							war_with = KRN
+							war_with = MAH
+							war_with = CIR
+							war_with = FIJ
+							war_with = FJN
+							war_with = GNG
+							war_with = HNN
+							war_with = SZC
+							war_with = SRI
+							war_with = TGA
+							war_with = DJA
+							war_with = INO
+							war_with = KLM
+							war_with = SAK
+							war_with = SLW
+							war_with = SYR
+							war_with = CPL
+							war_with = PBA
+							war_with = PRI
+							war_with = RPL
+							war_with = WIF
+							war_with = YUC
+							war_with = BEN
+							war_with = OYO
+						}
+					}
+					OR = {
+						has_country_flag = mob1
+						has_country_flag = mob2
+						has_country_flag = mob3
+						has_country_flag = mob4
+						has_country_flag = mob5
+						has_country_flag = mob6
+						has_country_flag = mob7
+						has_country_flag = mob8
+						has_country_modifier = is_mobbed1
+						has_country_modifier = is_mobbed2
+						has_country_modifier = is_mobbed3
+						has_country_modifier = is_mobbed4
+						has_country_modifier = is_mobbed5
+						has_country_modifier = is_mobbed6
+						has_country_modifier = is_mobbed7
+						has_country_modifier = is_mobbed8
+					}
+				}
+				clr_country_flag = mob1
+				clr_country_flag = mob2
+				clr_country_flag = mob3
+				clr_country_flag = mob4
+				clr_country_flag = mob5
+				clr_country_flag = mob6
+				clr_country_flag = mob7
+				clr_country_flag = mob8
+				remove_country_modifier = is_mobbed1
+				remove_country_modifier = is_mobbed2
+				remove_country_modifier = is_mobbed3
+				remove_country_modifier = is_mobbed4
+				remove_country_modifier = is_mobbed5
+				remove_country_modifier = is_mobbed6
+				remove_country_modifier = is_mobbed7
+				remove_country_modifier = is_mobbed8
+			}
+		}
+	}
+
+	gain_mob_modifier = {
+		picture = treaty_port
+		potential = {
+			tag = JAN
+			META_1 = {
+				owner = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					OR = {
+						NOT = { has_country_flag = mob1 }
+						AND = {
+							has_country_flag = mob1
+							NOT = { has_country_modifier = is_mobbed1 }
+						}
+						AND = {
+							has_country_flag = mob2
+							NOT = { has_country_modifier = is_mobbed2 }
+						}
+						AND = {
+							has_country_flag = mob3
+							NOT = { has_country_modifier = is_mobbed3 }
+						}
+						AND = {
+							has_country_flag = mob4
+							NOT = { has_country_modifier = is_mobbed4 }
+						}
+						AND = {
+							has_country_flag = mob5
+							NOT = { has_country_modifier = is_mobbed5 }
+						}
+						AND = {
+							has_country_flag = mob6
+							NOT = { has_country_modifier = is_mobbed6 }
+						}
+						AND = {
+							has_country_flag = mob7
+							NOT = { has_country_modifier = is_mobbed7 }
+						}
+					}
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					NOT = { has_country_flag = mob1 }
+					NOT = { has_country_modifier = is_mobbed1 }
+				}
+				set_country_flag = mob1
+				add_country_modifier = { name = is_mobbed1 duration = 182 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob1
+					NOT = { has_country_modifier = is_mobbed1 }
+					NOT = { has_country_flag = mob2 }
+					NOT = { has_country_modifier = is_mobbed2 }
+				}
+				set_country_flag = mob2
+				add_country_modifier = { name = is_mobbed2 duration = 182 }
+				country_event = { id=91338 days=0 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob2
+					NOT = { has_country_modifier = is_mobbed2 }
+					NOT = { has_country_flag = mob3 }
+					NOT = { has_country_modifier = is_mobbed3 }
+				}
+				set_country_flag = mob3
+				add_country_modifier = { name = is_mobbed3 duration = 182 }
+				country_event = { id=91339 days=0 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob3
+					NOT = { has_country_modifier = is_mobbed3 }
+					NOT = { has_country_flag = mob4 }
+					NOT = { has_country_modifier = is_mobbed4 }
+				}
+				set_country_flag = mob4
+				add_country_modifier = { name = is_mobbed4 duration = 182 }
+				country_event = { id=91340 days=0 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob4
+					NOT = { has_country_modifier = is_mobbed4 }
+					NOT = { has_country_flag = mob5 }
+					NOT = { has_country_modifier = is_mobbed5 }
+				}
+				set_country_flag = mob5
+				add_country_modifier = { name = is_mobbed5 duration = 182 }
+				country_event = { id=91341 days=0 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob5
+					NOT = { has_country_modifier = is_mobbed5 }
+					NOT = { has_country_flag = mob6 }
+					NOT = { has_country_modifier = is_mobbed6 }
+				}
+				set_country_flag = mob6
+				add_country_modifier = { name = is_mobbed6 duration = 182 }
+				country_event = { id=91342 days=0 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob6
+					NOT = { has_country_modifier = is_mobbed6 }
+					NOT = { has_country_flag = mob7 }
+					NOT = { has_country_modifier = is_mobbed7 }
+				}
+				set_country_flag = mob7
+				add_country_modifier = { name = is_mobbed7 duration = 182 }
+				country_event = { id=91343 days=0 }
+			}
+			random_country = {
+				limit = {
+					ai = no
+					is_mobilised = yes
+					OR = {
+						war = no
+						AND = {
+							war_with = HUG
+							NOT = { war_with = DUA }
+							NOT = { war_with = BRG }
+							NOT = { war_with = ARN }
+							NOT = { war_with = CAE }
+							NOT = { war_with = IBE }
+							NOT = { war_with = ARI }
+							NOT = { war_with = ARY }
+							NOT = { war_with = ARC }
+							NOT = { war_with = AZL }
+							NOT = { war_with = TKS }
+							NOT = { war_with = LST }
+							NOT = { war_with = TAR }
+							NOT = { war_with = IDC }
+							NOT = { war_with = ENG }
+							NOT = { war_with = RUS }
+							NOT = { war_with = FRA }
+							NOT = { war_with = PRU }
+							NOT = { war_with = GER }
+							NOT = { war_with = AUS }
+							NOT = { war_with = USA }
+							NOT = { war_with = JAP }
+							NOT = { war_with = ITA }
+							NOT = { war_with = AIT }
+							NOT = { war_with = KUK }
+							NOT = { war_with = DEN }
+							NOT = { war_with = FIN }
+							NOT = { war_with = NOR }
+							NOT = { war_with = SCA }
+							NOT = { war_with = SWE }
+							NOT = { war_with = PSV }
+							NOT = { war_with = BEL }
+							NOT = { war_with = CAT }
+							NOT = { war_with = FLA }
+							NOT = { war_with = IRE }
+							NOT = { war_with = NET }
+							NOT = { war_with = POR }
+							NOT = { war_with = SCO }
+							NOT = { war_with = SPA }
+							NOT = { war_with = WLL }
+							NOT = { war_with = PRV }
+							NOT = { war_with = OCC }
+							NOT = { war_with = WLS }
+							NOT = { war_with = BRT }
+							NOT = { war_with = ANH }
+							NOT = { war_with = BAD }
+							NOT = { war_with = BAV }
+							NOT = { war_with = BRA }
+							NOT = { war_with = BRE }
+							NOT = { war_with = COB }
+							NOT = { war_with = DZG }
+							NOT = { war_with = FRM }
+							NOT = { war_with = HAM }
+							NOT = { war_with = HAN }
+							NOT = { war_with = HES }
+							NOT = { war_with = HEK }
+							NOT = { war_with = HOL }
+							NOT = { war_with = LIP }
+							NOT = { war_with = LUB }
+							NOT = { war_with = LUX }
+							NOT = { war_with = MEC }
+							NOT = { war_with = MEI }
+							NOT = { war_with = NAS }
+							NOT = { war_with = NGF }
+							NOT = { war_with = OLD }
+							NOT = { war_with = SAX }
+							NOT = { war_with = SCH }
+							NOT = { war_with = SGF }
+							NOT = { war_with = WEI }
+							NOT = { war_with = WUR }
+							NOT = { war_with = RHI }
+							NOT = { war_with = POM }
+							NOT = { war_with = MNR }
+							NOT = { war_with = THU }
+							NOT = { war_with = BEG }
+							NOT = { war_with = FRI }
+							NOT = { war_with = BRN }
+							NOT = { war_with = TIR }
+							NOT = { war_with = LOM }
+							NOT = { war_with = LUC }
+							NOT = { war_with = MOD }
+							NOT = { war_with = PAP }
+							NOT = { war_with = PAR }
+							NOT = { war_with = SAR }
+							NOT = { war_with = SIC }
+							NOT = { war_with = TRE }
+							NOT = { war_with = TUS }
+							NOT = { war_with = VEN }
+							NOT = { war_with = FRR }
+							NOT = { war_with = BOH }
+							NOT = { war_with = KRA }
+							NOT = { war_with = CRI }
+							NOT = { war_with = EST }
+							NOT = { war_with = HUN }
+							NOT = { war_with = LIT }
+							NOT = { war_with = LAT }
+							NOT = { war_with = POL }
+							NOT = { war_with = SLV }
+							NOT = { war_with = SWI }
+							NOT = { war_with = RUT }
+							NOT = { war_with = SIE }
+							NOT = { war_with = UKR }
+							NOT = { war_with = CZH }
+							NOT = { war_with = NOV }
+							NOT = { war_with = MUS }
+							NOT = { war_with = ASK }
+							NOT = { war_with = ALB }
+							NOT = { war_with = BOS }
+							NOT = { war_with = BUL }
+							NOT = { war_with = CRE }
+							NOT = { war_with = CRO }
+							NOT = { war_with = CYP }
+							NOT = { war_with = GRE }
+							NOT = { war_with = ION }
+							NOT = { war_with = MOL }
+							NOT = { war_with = MON }
+							NOT = { war_with = ROM }
+							NOT = { war_with = SER }
+							NOT = { war_with = SLO }
+							NOT = { war_with = TUR }
+							NOT = { war_with = WAL }
+							NOT = { war_with = YUG }
+							NOT = { war_with = MAC }
+							NOT = { war_with = ALD }
+							NOT = { war_with = CNG }
+							NOT = { war_with = EGY }
+							NOT = { war_with = ETH }
+							NOT = { war_with = MAD }
+							NOT = { war_with = LIB }
+							NOT = { war_with = MOR }
+							NOT = { war_with = NAL }
+							NOT = { war_with = ORA }
+							NOT = { war_with = SAF }
+							NOT = { war_with = SOK }
+							NOT = { war_with = RHO }
+							NOT = { war_with = TRI }
+							NOT = { war_with = TRN }
+							NOT = { war_with = TUN }
+							NOT = { war_with = ZAN }
+							NOT = { war_with = ZUL }
+							NOT = { war_with = SOM }
+							NOT = { war_with = BSH }
+							NOT = { war_with = MAT }
+							NOT = { war_with = XHO }
+							NOT = { war_with = SUA }
+							NOT = { war_with = SHO }
+							NOT = { war_with = ABU }
+							NOT = { war_with = AFG }
+							NOT = { war_with = ARM }
+							NOT = { war_with = AZB }
+							NOT = { war_with = BUK }
+							NOT = { war_with = GEO }
+							NOT = { war_with = HDJ }
+							NOT = { war_with = IRQ }
+							NOT = { war_with = KHI }
+							NOT = { war_with = KOK }
+							NOT = { war_with = MUG }
+							NOT = { war_with = NEJ }
+							NOT = { war_with = OMA }
+							NOT = { war_with = PER }
+							NOT = { war_with = YEM }
+							NOT = { war_with = NOG }
+							NOT = { war_with = SIB }
+							NOT = { war_with = CHG }
+							NOT = { war_with = AFS }
+							NOT = { war_with = KZH }
+							NOT = { war_with = HND }
+							NOT = { war_with = AWA }
+							NOT = { war_with = BAS }
+							NOT = { war_with = BER }
+							NOT = { war_with = BHO }
+							NOT = { war_with = BIK }
+							NOT = { war_with = BUN }
+							NOT = { war_with = GWA }
+							NOT = { war_with = HYD }
+							NOT = { war_with = IND }
+							NOT = { war_with = JAI }
+							NOT = { war_with = JAS }
+							NOT = { war_with = JOD }
+							NOT = { war_with = KAL }
+							NOT = { war_with = KAS }
+							NOT = { war_with = KUT }
+							NOT = { war_with = LAD }
+							NOT = { war_with = MAK }
+							NOT = { war_with = MEW }
+							NOT = { war_with = MYS }
+							NOT = { war_with = NAG }
+							NOT = { war_with = NEP }
+							NOT = { war_with = ORI }
+							NOT = { war_with = PNJ }
+							NOT = { war_with = SHI }
+							NOT = { war_with = SIK }
+							NOT = { war_with = SIN }
+							NOT = { war_with = TRA }
+							NOT = { war_with = VIJ }
+							NOT = { war_with = MDR }
+							NOT = { war_with = ATJ }
+							NOT = { war_with = BAL }
+							NOT = { war_with = BHU }
+							NOT = { war_with = BRU }
+							NOT = { war_with = BUR }
+							NOT = { war_with = CAM }
+							NOT = { war_with = CHI }
+							NOT = { war_with = DAI }
+							NOT = { war_with = JAV }
+							NOT = { war_with = KOR }
+							NOT = { war_with = LUA }
+							NOT = { war_with = JOH }
+							NOT = { war_with = SIA }
+							NOT = { war_with = TIB }
+							NOT = { war_with = MGL }
+							NOT = { war_with = WIA }
+							NOT = { war_with = PHL }
+							NOT = { war_with = MCK }
+							NOT = { war_with = GXI }
+							NOT = { war_with = SXI }
+							NOT = { war_with = YNN }
+							NOT = { war_with = XBI }
+							NOT = { war_with = XIN }
+							NOT = { war_with = CAL }
+							NOT = { war_with = COM }
+							NOT = { war_with = CAN }
+							NOT = { war_with = CHE }
+							NOT = { war_with = COL }
+							NOT = { war_with = COS }
+							NOT = { war_with = CSA }
+							NOT = { war_with = CUB }
+							NOT = { war_with = DES }
+							NOT = { war_with = DOM }
+							NOT = { war_with = ELS }
+							NOT = { war_with = GUA }
+							NOT = { war_with = HAI }
+							NOT = { war_with = HAW }
+							NOT = { war_with = MAN }
+							NOT = { war_with = MEX }
+							NOT = { war_with = MTC }
+							NOT = { war_with = HON }
+							NOT = { war_with = NEN }
+							NOT = { war_with = NEW }
+							NOT = { war_with = NIC }
+							NOT = { war_with = PNM }
+							NOT = { war_with = QUE }
+							NOT = { war_with = TEX }
+							NOT = { war_with = UCA }
+							NOT = { war_with = DNG }
+							NOT = { war_with = VIN }
+							NOT = { war_with = PLA }
+							NOT = { war_with = NBG }
+							NOT = { war_with = KKN }
+							NOT = { war_with = KAM }
+							NOT = { war_with = ARG }
+							NOT = { war_with = BOL }
+							NOT = { war_with = BRZ }
+							NOT = { war_with = CHL }
+							NOT = { war_with = CLM }
+							NOT = { war_with = ECU }
+							NOT = { war_with = PEU }
+							NOT = { war_with = PRG }
+							NOT = { war_with = URU }
+							NOT = { war_with = VNZ }
+							NOT = { war_with = PBC }
+							NOT = { war_with = GRA }
+							NOT = { war_with = INC }
+							NOT = { war_with = AMA }
+							NOT = { war_with = LOT }
+							NOT = { war_with = NAN }
+							NOT = { war_with = AST }
+							NOT = { war_with = NZL }
+							NOT = { war_with = BTV }
+							NOT = { war_with = YLO }
+							NOT = { war_with = MJN }
+							NOT = { war_with = ZSA }
+							NOT = { war_with = AOT }
+							NOT = { war_with = ISR }
+							NOT = { war_with = BYZ }
+							NOT = { war_with = ICL }
+							NOT = { war_with = BAB }
+							NOT = { war_with = TPG }
+							NOT = { war_with = ARA }
+							NOT = { war_with = UBD }
+							NOT = { war_with = BYE }
+							NOT = { war_with = PLC }
+							NOT = { war_with = GCO }
+							NOT = { war_with = JAN }
+							NOT = { war_with = HUI }
+							NOT = { war_with = ASM }
+							NOT = { war_with = BIH }
+							NOT = { war_with = BNG }
+							NOT = { war_with = KRN }
+							NOT = { war_with = MAH }
+							NOT = { war_with = CIR }
+							NOT = { war_with = FIJ }
+							NOT = { war_with = FJN }
+							NOT = { war_with = GNG }
+							NOT = { war_with = HNN }
+							NOT = { war_with = SZC }
+							NOT = { war_with = SRI }
+							NOT = { war_with = TGA }
+							NOT = { war_with = DJA }
+							NOT = { war_with = INO }
+							NOT = { war_with = KLM }
+							NOT = { war_with = SAK }
+							NOT = { war_with = SLW }
+							NOT = { war_with = SYR }
+							NOT = { war_with = CPL }
+							NOT = { war_with = PBA }
+							NOT = { war_with = PRI }
+							NOT = { war_with = RPL }
+							NOT = { war_with = WIF }
+							NOT = { war_with = YUC }
+							NOT = { war_with = BEN }
+							NOT = { war_with = OYO }
+						}
+					}
+					has_country_flag = mob7
+					NOT = { has_country_modifier = is_mobbed7 }
+					NOT = { has_country_flag = mob8 }
+					NOT = { has_country_modifier = is_mobbed8 }
+				}
+				set_country_flag = mob8
+				add_country_modifier = { name = is_mobbed8 duration = -1 }
+				country_event = { id=91344 days=0 }
+			}
+		}
+	}
+
+#Commented out code for checking any provinces that don't have mine terrain modifier for Mine Expansion Building.
+	# check_for_provinces = {
+	# 	potential = {
+	# 		tag = JAN
+	# 	}
+	# 	allow = {
+	# 		META_1 = {
+	# 			owner = {
+	# 				any_owned_province = { 
+	# 					NOT = {
+	# 						terrain = arctic_mine
+	# 						terrain = farmlands_mine
+	# 						terrain = plains_mine
+	# 						terrain = steppe_mine
+	# 						terrain = woods_mine
+	# 						terrain = forest_mine
+	# 						terrain = boreal_mine
+	# 						terrain = jungle_mine
+	# 						terrain = hills_mine
+	# 						terrain = dryhills_mine
+	# 						terrain = mountain_mine
+	# 						terrain = semidesert_mine
+	# 						terrain = desert_mine
+	# 						terrain = coastal_desert_mine
+	# 						terrain = marsh_mine
+	# 					}
+	# 					OR = { 
+	# 						province_id = 1102
+	# 						province_id = 1205
+	# 						province_id = 1104
+	# 						province_id = 1186
+	# 						province_id = 1202
+	# 						province_id = 1107
+	# 						province_id = 132
+	# 						province_id = 667
+	# 						province_id = 672
+	# 						province_id = 1168
+	# 						province_id = 110
+	# 						province_id = 180
+	# 						province_id = 89
+	# 						province_id = 133
+	# 						province_id = 126
+	# 						province_id = 1399
+	# 						province_id = 1055
+	# 						province_id = 1393
+	# 						province_id = 1401
+	# 						province_id = 1425
+	# 						province_id = 1432
+	# 						province_id = 1335
+	# 						province_id = 134
+	# 						province_id = 705
+	# 						province_id = 1260
+	# 						province_id = 1086
+	# 						province_id = 129
+	# 						province_id = 1680
+	# 						province_id = 1929
+	# 						province_id = 2173
+	# 						province_id = 1731
+	# 						province_id = 87
+	# 						province_id = 2162
+	# 						province_id = 2163
+	# 						province_id = 702
+	# 						province_id = 1397
+	# 						province_id = 2091
+	# 						province_id = 2237
+	# 						province_id = 2396
+	# 						province_id = 2391
+	# 						province_id = 1108
+	# 						province_id = 1732
+	# 						province_id = 1720
+	# 						province_id = 1167
+	# 						province_id = 1163
+	# 						province_id = 2270
+	# 						province_id = 1170
+	# 						province_id = 1132
+	# 						province_id = 1051
+	# 						province_id = 1182
+	# 						province_id = 26
+	# 						province_id = 2291
+	# 						province_id = 849
+	# 						province_id = 928
+	# 						province_id = 923
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		META_1 = {
+	# 			secede_province = JAN
+	# 		}
+	# 		any_owned = {
+	# 			limit = {
+	# 				NOT = {
+	# 					terrain = arctic_mine
+	# 					terrain = farmlands_mine
+	# 					terrain = plains_mine
+	# 					terrain = steppe_mine
+	# 					terrain = woods_mine
+	# 					terrain = forest_mine
+	# 					terrain = boreal_mine
+	# 					terrain = jungle_mine
+	# 					terrain = hills_mine
+	# 					terrain = dryhills_mine
+	# 					terrain = mountain_mine
+	# 					terrain = semidesert_mine
+	# 					terrain = desert_mine
+	# 					terrain = coastal_desert_mine
+	# 					terrain = marsh_mine
+	# 				}
+	# 				OR = { 
+	# 					province_id = 1102
+	# 					province_id = 1104
+	# 					province_id = 1186
+	# 					province_id = 1182
+	# 					province_id = 1205
+	# 					province_id = 1202
+	# 					province_id = 1107
+	# 					province_id = 1393
+	# 					province_id = 132
+	# 					province_id = 667
+	# 					province_id = 672
+	# 					province_id = 1168
+	# 					province_id = 110
+	# 					province_id = 180
+	# 					province_id = 89
+	# 					province_id = 133
+	# 					province_id = 126
+	# 					province_id = 1399
+	# 					province_id = 1055
+	# 					province_id = 1401
+	# 					province_id = 1425
+	# 					province_id = 1432
+	# 					province_id = 1335
+	# 					province_id = 134
+	# 					province_id = 705
+	# 					province_id = 1260
+	# 					province_id = 1086
+	# 					province_id = 129
+	# 					province_id = 1680
+	# 					province_id = 2173
+	# 					province_id = 87
+	# 					province_id = 2162
+	# 					province_id = 2163
+	# 					province_id = 702
+	# 					province_id = 1397
+	# 					province_id = 2237
+	# 					province_id = 2396
+	# 					province_id = 2391
+	# 					province_id = 1108
+	# 					province_id = 1051
+	# 					province_id = 2270
+	# 					province_id = 1163
+	# 					province_id = 1732
+	# 					province_id = 1720
+	# 					province_id = 1132
+	# 					province_id = 1170
+	# 					province_id = 26
+	# 					province_id = 2291
+	# 					province_id = 849
+	# 					province_id = 928
+	# 					province_id = 923
+	# 					trade_goods = sulphur
+	# 					trade_goods = iron
+	# 					trade_goods = coal
+	# 				}
+	# 			}
+	# 			secede_province = DUA
+	# 		}
+	# 	}
+	# }
+#########################################################################
+# 							NATIONAL IDEA								#
+#########################################################################
+	national_idea = {
+		potential = {
+			tag = JAN
+		}
+
+		allow = {
+			META_1 = {
+				owner = {
+					ai = no
+					any_owned_province = { 
+						is_capital = yes
+						OR = {
+							AND = {
+								owner = { NOT = { has_country_flag = national_idea1 } }
+								NOT = { has_province_modifier = national_idea1_bar }
+							}
+							AND = {
+								owner = { NOT = { has_country_flag = national_idea2 } }
+								NOT = { has_province_modifier = national_idea2_bar }
+							}
+							AND = {
+								owner = { NOT = { has_country_flag = national_idea3 } }
+								NOT = { has_province_modifier = national_idea3_bar }
+							}
+							AND = {
+								owner = { NOT = { has_country_flag = national_idea4 } }
+								NOT = { has_province_modifier = national_idea4_bar } 
+							}
+							AND = {
+								owner = { NOT = { has_country_flag = national_idea5 } }
+								NOT = { has_province_modifier = national_idea5_bar }
+							}
+							AND = {
+								owner = { has_country_flag = army_morale_idea }
+								NOT = { has_province_modifier = army_morale_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = army_organisation_idea }
+								NOT = { has_province_modifier = army_organisation_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = military_supplies_idea }
+								NOT = { has_province_modifier = military_supplies_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = military_hospitals_idea }
+								NOT = { has_province_modifier = military_hospitals_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = reinforce_rate_idea }
+								NOT = { has_province_modifier = reinforce_rate_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = leadership_idea }
+								NOT = { has_province_modifier = leadership_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = prestige_idea }
+								NOT = { has_province_modifier = prestige_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = navy_organisation_idea }
+								NOT = { has_province_modifier = navy_organisation_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = expansion_idea }
+								NOT = { has_province_modifier = expansion_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = assimilation_idea }
+								NOT = { has_province_modifier = assimilation_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = farming_idea }
+								NOT = { has_province_modifier = farming_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = mining_idea }
+								NOT = { has_province_modifier = mining_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = consumer_goods_idea }
+								NOT = { has_province_modifier = consumer_goods_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = industrial_goods_idea }
+								NOT = { has_province_modifier = industrial_goods_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = domestic_idea }
+								NOT = { has_province_modifier = domestic_idea_bar }
+							}
+							AND = {
+								owner = { has_country_flag = education_idea }
+								NOT = { has_province_modifier = education_idea_bar }
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			any_country = {
+				limit = { ai = no }
+				any_owned = {
+					limit = {
+						is_capital = yes
+					}
+					remove_province_modifier = national_idea1_bar
+					remove_province_modifier = national_idea2_bar
+					remove_province_modifier = national_idea3_bar
+					remove_province_modifier = national_idea4_bar
+					remove_province_modifier = national_idea5_bar
+				}
+
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = army_morale_idea }
+						NOT = { has_province_modifier = army_morale_idea_bar }
+					}
+					add_province_modifier = { name = army_morale_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = army_organisation_idea }
+						NOT = { has_province_modifier = army_organisation_idea_bar }
+					}
+					add_province_modifier = { name = army_organisation_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = military_supplies_idea }
+						NOT = { has_province_modifier = military_supplies_idea_bar }
+					}
+					add_province_modifier = { name = military_supplies_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = military_hospitals_idea }
+						NOT = { has_province_modifier = military_hospitals_idea_bar }
+					}
+					add_province_modifier = { name = military_hospitals_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = reinforce_rate_idea }
+						NOT = { has_province_modifier = reinforce_rate_idea_bar }
+					}
+					add_province_modifier = { name = reinforce_rate_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = leadership_idea }
+						NOT = { has_province_modifier = leadership_idea_bar }
+					}
+					add_province_modifier = { name = leadership_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = prestige_idea }
+						NOT = { has_province_modifier = prestige_idea_bar }
+					}
+					add_province_modifier = { name = prestige_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = navy_organisation_idea }
+						NOT = { has_province_modifier = navy_organisation_idea_bar }
+					}
+					add_province_modifier = { name = navy_organisation_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = expansion_idea }
+						NOT = { has_province_modifier = expansion_idea_bar }
+					}
+					add_province_modifier = { name = expansion_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = assimilation_idea }
+						NOT = { has_province_modifier = assimilation_idea_bar }
+					}
+					add_province_modifier = { name = assimilation_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = farming_idea }
+						NOT = { has_province_modifier = farming_idea_bar }
+					}
+					add_province_modifier = { name = farming_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = mining_idea }
+						NOT = { has_province_modifier = mining_idea_bar }
+					}
+					add_province_modifier = { name = mining_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = consumer_goods_idea }
+						NOT = { has_province_modifier = consumer_goods_idea_bar }
+					}
+					add_province_modifier = { name = consumer_goods_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = industrial_goods_idea }
+						NOT = { has_province_modifier = industrial_goods_idea_bar }
+					}
+					add_province_modifier = { name = industrial_goods_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = domestic_idea }
+						NOT = { has_province_modifier = domestic_idea_bar }
+					}
+					add_province_modifier = { name = domestic_idea_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { has_country_flag = education_idea }
+						NOT = { has_province_modifier = education_idea_bar }
+					}
+					add_province_modifier = { name = education_idea_bar duration = -1 }
+				}
+
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea1 } }
+						NOT = { has_province_modifier = national_idea1_bar }
+					}
+					add_province_modifier = { name = national_idea1_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea2 } }
+						NOT = { has_province_modifier = national_idea2_bar }
+					}
+					add_province_modifier = { name = national_idea2_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea3 } }
+						NOT = { has_province_modifier = national_idea3_bar }
+					}
+					add_province_modifier = { name = national_idea3_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea4 } }
+						NOT = { has_province_modifier = national_idea4_bar }
+					}
+					add_province_modifier = { name = national_idea4_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea5 } }
+						NOT = { has_province_modifier = national_idea5_bar }
+					}
+					add_province_modifier = { name = national_idea5_bar duration = -1 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#########################################################################
+# 							OIL LOCATION								#
+#########################################################################
+	oil_locations_modifier = {
+		potential = {
+			tag = JAN
+		}
+		
+		allow = {
+			OR = {
+	 			1102 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1205 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1104 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1186 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1202 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1107 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				132 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				667 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				672 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1168 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				110 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				180 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				89 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				133 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				126 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1399 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1055 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1393 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1401 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1425 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1432 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1335 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				134 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				705 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1260 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1086 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				129 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1680 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1929 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2173 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1731 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				87 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2162 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2163 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				702 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1397 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2091 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2237 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2396 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2391 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1108 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1732 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1720 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1167 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1163 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2270 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1170 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1132 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1051 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				1182 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				26 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				2291 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				849 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				928 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+				923 = { NOT = { has_province_modifier = oil_location trade_goods = oil } empty = no }
+			}
+		}
+		
+		effect = {
+			any_country = {
+				any_owned = {
+					limit = { 
+						OR = { 
+							province_id = 1102
+							province_id = 1205
+							province_id = 1104
+							province_id = 1186
+							province_id = 1202
+							province_id = 1107
+							province_id = 132
+							province_id = 667
+							province_id = 672
+							province_id = 1168
+							province_id = 110
+							province_id = 180
+							province_id = 89
+							province_id = 133
+							province_id = 126
+							province_id = 1399
+							province_id = 1055
+							province_id = 1393
+							province_id = 1401
+							province_id = 1425
+							province_id = 1432
+							province_id = 1335
+							province_id = 134
+							province_id = 705
+							province_id = 1260
+							province_id = 1086
+							province_id = 129
+							province_id = 1680
+							province_id = 1929
+							province_id = 2173
+							province_id = 1731
+							province_id = 87
+							province_id = 2162
+							province_id = 2163
+							province_id = 702
+							province_id = 1397
+							province_id = 2091
+							province_id = 2237
+							province_id = 2396
+							province_id = 2391
+							province_id = 1108
+							province_id = 1732
+							province_id = 1720
+							province_id = 1167
+							province_id = 1163
+							province_id = 2270
+							province_id = 1170
+							province_id = 1132
+							province_id = 1051
+							province_id = 1182
+							province_id = 26
+							province_id = 2291
+							province_id = 849
+							province_id = 928
+							province_id = 923
+						}
+						empty = no
+						NOT = { has_province_modifier = oil_location }
+						NOT = { trade_goods = oil }
+					}
+					add_province_modifier = { name = oil_location duration = -1 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	clear_oil_locations_modifier = {
+		potential = {
+			tag = JAN
+		}
+		
+		allow = {
+			OR = {
+				1102 = { has_province_modifier = oil_location trade_goods = oil }
+				1205 = { has_province_modifier = oil_location trade_goods = oil }
+				1104 = { has_province_modifier = oil_location trade_goods = oil }
+				1186 = { has_province_modifier = oil_location trade_goods = oil }
+				1202 = { has_province_modifier = oil_location trade_goods = oil }
+				1107 = { has_province_modifier = oil_location trade_goods = oil }
+				132 = { has_province_modifier = oil_location trade_goods = oil }
+				667 = { has_province_modifier = oil_location trade_goods = oil }
+				672 = { has_province_modifier = oil_location trade_goods = oil }
+				1168 = { has_province_modifier = oil_location trade_goods = oil }
+				110 = { has_province_modifier = oil_location trade_goods = oil }
+				180 = { has_province_modifier = oil_location trade_goods = oil }
+				89 = { has_province_modifier = oil_location trade_goods = oil }
+				133 = { has_province_modifier = oil_location trade_goods = oil }
+				126 = { has_province_modifier = oil_location trade_goods = oil }
+				1399 = { has_province_modifier = oil_location trade_goods = oil }
+				1055 = { has_province_modifier = oil_location trade_goods = oil }
+				1393 = { has_province_modifier = oil_location trade_goods = oil }
+				1401 = { has_province_modifier = oil_location trade_goods = oil }
+				1425 = { has_province_modifier = oil_location trade_goods = oil }
+				1432 = { has_province_modifier = oil_location trade_goods = oil }
+				1335 = { has_province_modifier = oil_location trade_goods = oil }
+				134 = { has_province_modifier = oil_location trade_goods = oil }
+				705 = { has_province_modifier = oil_location trade_goods = oil }
+				1260 = { has_province_modifier = oil_location trade_goods = oil }
+				1086 = { has_province_modifier = oil_location trade_goods = oil }
+				129 = { has_province_modifier = oil_location trade_goods = oil }
+				1680 = { has_province_modifier = oil_location trade_goods = oil }
+				1929 = { has_province_modifier = oil_location trade_goods = oil }
+				2173 = { has_province_modifier = oil_location trade_goods = oil }
+				1731 = { has_province_modifier = oil_location trade_goods = oil }
+				87 = { has_province_modifier = oil_location trade_goods = oil }
+				2162 = { has_province_modifier = oil_location trade_goods = oil }
+				2163 = { has_province_modifier = oil_location trade_goods = oil }
+				702 = { has_province_modifier = oil_location trade_goods = oil }
+				1397 = { has_province_modifier = oil_location trade_goods = oil }
+				2091 = { has_province_modifier = oil_location trade_goods = oil }
+				2237 = { has_province_modifier = oil_location trade_goods = oil }
+				2396 = { has_province_modifier = oil_location trade_goods = oil }
+				2391 = { has_province_modifier = oil_location trade_goods = oil }
+				1108 = { has_province_modifier = oil_location trade_goods = oil }
+				1732 = { has_province_modifier = oil_location trade_goods = oil }
+				1720 = { has_province_modifier = oil_location trade_goods = oil }
+				1167 = { has_province_modifier = oil_location trade_goods = oil }
+				1163 = { has_province_modifier = oil_location trade_goods = oil }
+				2270 = { has_province_modifier = oil_location trade_goods = oil }
+				1170 = { has_province_modifier = oil_location trade_goods = oil }
+				1132 = { has_province_modifier = oil_location trade_goods = oil }
+				1051 = { has_province_modifier = oil_location trade_goods = oil }
+				1182 = { has_province_modifier = oil_location trade_goods = oil }
+				26 = { has_province_modifier = oil_location trade_goods = oil }
+				2291 = { has_province_modifier = oil_location trade_goods = oil }
+				849 = { has_province_modifier = oil_location trade_goods = oil }
+				928 = { has_province_modifier = oil_location trade_goods = oil }
+				923 = { has_province_modifier = oil_location trade_goods = oil }
+			}
+		}
+		
+		effect = {
+			any_country = {
+				any_owned = {
+					limit = { 
+						OR = { 
+							province_id = 1102
+							province_id = 1205
+							province_id = 1104
+							province_id = 1186
+							province_id = 1202
+							province_id = 1107
+							province_id = 132
+							province_id = 667
+							province_id = 672
+							province_id = 1168
+							province_id = 110
+							province_id = 180
+							province_id = 89
+							province_id = 133
+							province_id = 126
+							province_id = 1399
+							province_id = 1055
+							province_id = 1393
+							province_id = 1401
+							province_id = 1425
+							province_id = 1432
+							province_id = 1335
+							province_id = 134
+							province_id = 705
+							province_id = 1260
+							province_id = 1086
+							province_id = 129
+							province_id = 1680
+							province_id = 1929
+							province_id = 2173
+							province_id = 1731
+							province_id = 87
+							province_id = 2162
+							province_id = 2163
+							province_id = 702
+							province_id = 1397
+							province_id = 2091
+							province_id = 2237
+							province_id = 2396
+							province_id = 2391
+							province_id = 1108
+							province_id = 1732
+							province_id = 1720
+							province_id = 1167
+							province_id = 1163
+							province_id = 2270
+							province_id = 1170
+							province_id = 1132
+							province_id = 1051
+							province_id = 1182
+							province_id = 26
+							province_id = 2291
+							province_id = 849
+							province_id = 928
+							province_id = 923
+						}
+						has_province_modifier = oil_location
+						trade_goods = oil
+						empty = no				
+					}
+					remove_province_modifier = oil_location
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#########################################################################
+# 							ROW COMPLETION								#
+#########################################################################
+	missalaneous_jan = {
+		picture = cease_fire
+		potential = {
+			tag = JAN
+		}
+		allow = {
+			NOT = { has_country_modifier = row_completion_cooldown }
+		}
+		effect = {
+			add_country_modifier = { name = row_completion_cooldown duration = 29 }
+			any_country = {
+				limit = {
+					post_napoleonic_thought = 1
+					flintlock_rifles = 1
+					bronze_muzzle_loaded_artillery = 1
+					military_staff_system = 1
+					army_command_principle = 1
+					NOT = { army_row_completion1 = 1 }
+				}
+				activate_technology = army_row_completion1
+			}
+			any_country = {
+				limit = {
+					strategic_mobility = 1
+					muzzle_loaded_rifles = 1
+					iron_muzzle_loaded_artillery = 1
+					military_plans = 1
+					army_professionalism = 1
+					NOT = { army_row_completion2 = 1 }
+				}
+				activate_technology = army_row_completion2
+			}
+			any_country = {
+				limit = {
+					point_defense_system = 1
+					breech_loaded_rifles = 1
+					iron_breech_loaded_artillery = 1
+					military_statistics = 1
+					army_decision_making = 1
+					NOT = { army_row_completion3 = 1 }
+				}
+				add_country_modifier = { name = army_row_completion2 duration = -1 }
+				activate_technology = army_row_completion3
+			}
+			any_country = {
+				limit = {
+					deep_defense_system = 1
+					machine_guns = 1
+					steel_breech_loaded_artillery = 1
+					military_logistics = 1
+					army_risk_management = 1
+					NOT = { army_row_completion4 = 1 }
+				}
+				activate_technology = army_row_completion4
+			}
+			any_country = {
+				limit = {
+					infiltration = 1
+					bolt_action_rifles = 1
+					indirect_artillery_fire = 1
+					military_directionism = 1
+					army_nco_training = 1
+					NOT = { army_row_completion5 = 1 }
+				}
+				activate_technology = army_row_completion5
+			}
+			any_country = {
+				limit = {
+					modern_army_doctrine = 1
+					modern_divisional_structure = 1
+					heavy_armament_dunno = 1
+					aeronautics = 1
+					great_war_experience = 1
+					NOT = { army_row_completion6 = 1 }
+				}
+				activate_technology = army_row_completion6
+			}
+			any_country = {
+				limit = {
+					private_banks = 1
+					no_standard = 1
+					early_classical_theory_and_critique = 1
+					freedom_of_trade = 1
+					guild_based_production = 1
+					NOT = { commerce_row_completion1 = 1 }
+				}
+				activate_technology = commerce_row_completion1
+			}
+			any_country = {
+				limit = {
+					stock_exchange = 1
+					ad_hoc_money_bill_printing = 1
+					late_classical_theory = 1
+					market_structure = 1
+					organized_factories = 1
+					NOT = { commerce_row_completion2 = 1 }
+				}
+				activate_technology = commerce_row_completion2
+			}
+			any_country = {
+				limit = {
+					business_banks = 1
+					private_bank_money_bill_printing = 1
+					collectivist_theory = 1
+					business_regulations = 1
+					scientific_management = 1
+					NOT = { commerce_row_completion3 = 1 }
+				}
+				activate_technology = commerce_row_completion3
+			}
+			any_country = {
+				limit = { 
+					investment_banks = 1
+					central_bank_money_bill_printing = 1
+					the_historical_theory = 1
+					market_regulations = 1
+					time_saving_measures = 1
+					NOT = { commerce_row_completion4 = 1 }
+				}
+				activate_technology = commerce_row_completion4
+			}
+			any_country = {
+				limit = {
+					bank_inspection_board = 1
+					modern_central_bank_system = 1
+					neoclassical_theory = 1
+					economic_responsibility = 1
+					management_strategy = 1
+					NOT = { commerce_row_completion5 = 1 }
+				}
+				activate_technology = commerce_row_completion5
+				add_country_modifier = { name = commerce_row_completion4 duration = -1 }
+			}
+			any_country = {
+				limit = {
+					mutual_funds = 1
+					market_determined_exchange_rates = 1
+					keynesian_economics = 1
+					government_interventionism = 1
+					organizational_development = 1
+					NOT = { commerce_row_completion6 = 1 }
+				}
+				add_country_modifier = { name = commerce_row_completion5 duration = -1 }
+				activate_technology = commerce_row_completion6
+			}
+			any_country = {
+				limit = {
+					classicism_n_early_romanticism = 1
+					late_enlightenment_philosophy = 1
+					malthusian_thought = 1
+					enlightenment_thought = 1
+					introspectionism = 1
+					NOT = { culture_row_completion1 = 1 }
+				}
+				activate_technology = culture_row_completion1
+			}
+			any_country = {
+				limit = {
+					romanticism = 1
+					idealism = 1
+					positivism = 1
+					ideological_thought = 1
+					associationism = 1
+					NOT = { culture_row_completion2 = 1 }
+				}
+				activate_technology = culture_row_completion2
+			}
+			any_country = {
+				limit = {
+					realism = 1
+					empiricism = 1
+					functionalism = 1
+					state_n_government = 1
+					experimental_psychology = 1
+					NOT = { culture_row_completion3 = 1 }
+				}
+				add_country_modifier = { name = culture_row_completion2 duration = -1 }
+				activate_technology = culture_row_completion3
+			}
+			any_country = {
+				limit = {
+					impressionism = 1
+					analytic_philosophy = 1
+					biologism = 1
+					nationalism_n_imperialism = 1
+					psychological_intelligence = 1
+					NOT = { culture_row_completion4 = 1 }
+				}
+				activate_technology = culture_row_completion4
+			}
+			any_country = {
+				limit = {
+					expressionism = 1
+					phenomenology_n_hermeneutic = 1
+					social_science = 1
+					revolution_n_counterrevolution = 1
+					psychoanalysis = 1
+					NOT = { culture_row_completion5 = 1 }
+				}
+				activate_technology = culture_row_completion5
+			}
+			any_country = {
+				limit = {
+					mass_culture_n_the_avant_garde = 1
+					anti__rationalism = 1
+					social_alienation = 1
+					mass_politics = 1
+					behaviorism = 1
+					NOT = { culture_row_completion6 = 1 }
+				}
+				activate_technology = culture_row_completion6
+			}
+			any_country = {
+				limit = {
+					water_wheel_power = 1
+					publishing_industry = 1
+					mechanized_mining = 1
+					experimental_railroad = 1
+					basic_chemistry = 1
+					NOT = { industry_row_completion1 = 1 }
+				}
+				activate_technology = industry_row_completion1
+			}
+			any_country = {
+				limit = {
+					practical_steam_engine = 1
+					mechanical_production = 1
+					clean_coal = 1
+					early_railroad = 1
+					medicine = 1
+					NOT = { industry_row_completion2 = 1 }
+				}
+				activate_technology = industry_row_completion2
+			}
+			any_country = {
+				limit = {
+					high_n_low_pressure_steam_engines = 1
+					interchangeable_parts = 1
+					cheap_iron = 1
+					iron_railroad = 1
+					inorganic_chemistry = 1
+					NOT = { industry_row_completion3 = 1 }
+				}
+				activate_technology = industry_row_completion3
+			}
+			any_country = {
+				limit = {
+					steam_turbine = 1
+					semi_automatization = 1
+					cheap_steel = 1
+					steel_railroad = 1
+					organic_chemistry = 1
+					NOT = { industry_row_completion4 = 1 }
+				}
+				activate_technology = industry_row_completion4
+			}
+			any_country = {
+				limit = {
+					combustion_engine = 1
+					assembly_line = 1
+					advanced_metallurgy = 1
+					integral_rail_system = 1
+					electricity = 1
+					NOT = { industry_row_completion5 = 1 }
+				}
+				activate_technology = industry_row_completion5
+			}
+			any_country = {
+				limit = {
+					electrical_power_generation = 1
+					shift_work = 1
+					electric_furnace = 1
+					limited_access_roads = 1
+					synthetic_polymers = 1
+					NOT = { industry_row_completion6 = 1 }
+				}
+				activate_technology = industry_row_completion6
+			}
+			any_country = {
+				limit = {
+					post_nelsonian_thought = 1
+					clipper_design = 1
+					naval_design_bureaus = 1
+					alphabetic_flag_signaling = 1
+					the_command_principle = 1
+					NOT = { navy_row_completion1 = 1 }
+				}
+				activate_technology = navy_row_completion1
+			}
+			any_country = {
+				limit = {
+					battleship_column_doctrine = 1
+					steamers = 1
+					fire_control_systems = 1
+					naval_plans = 1
+					naval_professionalism = 1
+					NOT = { navy_row_completion2 = 1 }
+				}
+				activate_technology = navy_row_completion2
+			}
+			any_country = {
+				limit = {
+					raider_group_doctrine = 1
+					iron_steamers = 1
+					weapon_platforms = 1
+					naval_statistics = 1
+					naval_decision_making = 1
+					NOT = { navy_row_completion3 = 1 }
+				}
+				activate_technology = navy_row_completion3
+			}
+			any_country = {
+				limit = {
+					blue_and_brown_water_schools = 1
+					steel_steamers = 1
+					main_armament = 1
+					naval_logistics = 1
+					naval_risk_management = 1
+					NOT = { navy_row_completion4 = 1 }
+				}
+				activate_technology = navy_row_completion4
+			}
+			any_country = {
+				limit = {
+					high_sea_battle_fleet = 1
+					steam_turbine_ships = 1
+					advanced_naval_design = 1
+					naval_directionism = 1
+					naval_nco_training = 1
+					NOT = { navy_row_completion5 = 1 }
+				}
+				activate_technology = navy_row_completion5
+			}
+			any_country = {
+				limit = {
+					modern_naval_doctrine = 1
+					oil_driven_ships = 1
+					modern_naval_design = 1
+					naval_integration = 1
+					modern_naval_training = 1
+					NOT = { navy_row_completion6 = 1 }
+				}
+				activate_technology = navy_row_completion6
+			}
+		}
+	}
+}

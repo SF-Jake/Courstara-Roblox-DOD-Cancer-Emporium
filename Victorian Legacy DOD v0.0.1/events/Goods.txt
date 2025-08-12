@@ -1041,8 +1041,10 @@ province_event = {
 
 	trigger = {
 		year = 1894
-		province_id = 2173		# Queretaro
-		province_od = 1731
+		OR = {
+			province_id = 2173		# Queretaro
+			province_id = 1731
+		}
 		not = { trade_goods = oil }
 		OR = {
 			owner = {

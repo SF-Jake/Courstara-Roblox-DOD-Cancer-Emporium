@@ -4,6 +4,137 @@
 ###############################################################
 
 #Early Classical Theory
+PS_unlocked = {
+	limit = { early_classical_theory_and_critique = 1 }
+	news = no
+	chance = {
+		base = 100	
+		modifier = {
+			factor = -100
+			ai = yes
+		}
+	}
+	effect = {
+		activate_building = province_selector
+	}
+}
+
+farmland_unlocked = {
+	limit = { early_classical_theory_and_critique = 1 }
+	news = no
+	chance = {
+		base = 100	
+	}
+	effect = {
+		activate_building = farmland
+		max_farmland = 49
+	}
+}
+
+military_hospitals_idea_invention = {
+	limit = {
+		early_classical_theory_and_critique = 1
+		has_country_flag = military_hospitals_idea
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = military_hospitals_idea
+		}
+	}
+	effect = {
+		soldier_to_pop_loss = 0.1
+	}
+}
+
+reinforce_rate_idea_invention = {
+	limit = {
+		early_classical_theory_and_critique = 1
+		has_country_flag = reinforce_rate_idea
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = reinforce_rate_idea
+		}
+	}
+	effect = {
+		reinforce_rate = 0.1
+	}
+}
+
+consumer_goods_idea = {
+	limit = {
+		early_classical_theory_and_critique = 1
+		has_country_flag = consumer_goods_idea
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = consumer_goods_idea
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			canned_food = 0.06
+			glass = 0.06
+			fertilizer = 0.06
+			explosives = 0.06
+			fabric = 0.06
+			lumber = 0.06
+			paper = 0.06
+			telephones = 0.06
+			wine = 0.06
+			liquor = 0.06
+			regular_clothes = 0.06
+			luxury_clothes = 0.06
+			furniture = 0.06
+			luxury_furniture = 0.06
+			radio = 0.06
+			pharmaceuticals = 0.06
+			cigarettes = 0.06
+			tea = 0.06
+			coffee = 0.06
+		}
+	}
+}
+
+industrial_goods_idea = {
+	limit = {
+		early_classical_theory_and_critique = 1
+		has_country_flag = industrial_goods_idea
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = industrial_goods_idea
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			ammunition = 0.06
+			small_arms = 0.06
+			artillery = 0.06
+			barrels = 0.06
+			sulphur = 0.06
+			rubber = 0.06
+			oil = 0.06
+			steel = 0.06
+			cement = 0.06
+			machine_parts = 0.06
+			clipper_convoy = 0.06
+			steamer_convoy = 0.06
+			electric_gear = 0.06
+			automobiles = 0.06
+			aeroplanes = 0.06
+		}
+	}
+}
+
 adam_smith = {
 	limit = { early_classical_theory_and_critique = 1 }
 	news = no

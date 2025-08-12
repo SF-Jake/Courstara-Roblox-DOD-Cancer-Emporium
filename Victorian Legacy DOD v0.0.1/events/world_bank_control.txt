@@ -161,7 +161,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = LCT
+		tag = JAN
 	}
 	
 	mean_time_to_happen = {
@@ -170,6 +170,13 @@ country_event = {
 	
 	option = {
 		name = "Alright, sounds good."
+		build_factory_in_capital_state = world_bank_factory
+		build_factory_in_capital_state = world_bank_factory
+		build_factory_in_capital_state = world_bank_factory
+		build_factory_in_capital_state = world_bank_factory
+		build_factory_in_capital_state = world_bank_factory
+		build_factory_in_capital_state = world_bank_factory
+		build_factory_in_capital_state = world_bank_factory
 		build_factory_in_capital_state = world_bank_factory
 		add_country_modifier = {
 			name = world_bank_rp_nerf

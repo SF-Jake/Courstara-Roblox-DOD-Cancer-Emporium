@@ -3,6 +3,7 @@ political_decisions = {
 		picture = latin_monetary_union
 		alert = no
 		potential = {
+			has_country_flag = show_options_Y
 			ai = no
 		}
 		allow = {

@@ -1,0 +1,390 @@
+political_decisions = {
+	global_1836_setup = {
+		potential = {
+			tag = JAN
+			NOT = { has_global_flag = global_1836_setup }
+		}
+		allow = {
+		}
+		effect = {
+			country_event = { id = 91600 days = 1 }
+			set_country_flag = jan_mayen
+			set_global_flag = global_1836_setup
+			set_country_flag = banker_income_timer
+			#Country Specific Tech unlocks
+			DUA = {
+				activate_technology = ideological_thought
+			}
+			#Give all Countries some leadership to get Generals
+			any_country = {
+				leadership = 60
+			}
+			any_country = {
+				limit = { ai = no }
+				#Province Selector for players
+				activate_technology = early_classical_theory_and_critique
+				#Place National Idea UI On Capital
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea1 } }
+						NOT = { has_province_modifier = national_idea1_bar }
+					}
+					add_province_modifier = { name = national_idea1_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea2 } }
+						NOT = { has_province_modifier = national_idea2_bar }
+					}
+					add_province_modifier = { name = national_idea2_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea3 } }
+						NOT = { has_province_modifier = national_idea3_bar }
+					}
+					add_province_modifier = { name = national_idea3_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea4 } }
+						NOT = { has_province_modifier = national_idea4_bar }
+					}
+					add_province_modifier = { name = national_idea4_bar duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						is_capital = yes
+						owner = { NOT = { has_country_flag = national_idea5 } }
+						NOT = { has_province_modifier = national_idea5_bar }
+					}
+					add_province_modifier = { name = national_idea5_bar duration = -1 }
+				}
+				#Add Capital Supply Depot.
+				capital_scope = {
+					add_province_modifier = { name = capital_supply_depot duration = -1 }
+				}
+				#Fire John Cena General event spawn
+				country_event = { id = 600000 days = 0 }
+				#Add Flag to show options decisions rather than hide it.
+				set_country_flag = show_options_Y
+			}
+			any_country = {
+				political_reform = no_draft
+			}
+			#Starting Literacy for Countries
+			any_country = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = south_german
+							has_pop_culture = scandinavian 
+							has_pop_culture = ashkenazi 
+						}
+					}
+					literacy = 0.8
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = pomeranian
+							has_pop_culture = rheinish
+							has_pop_culture = north_german
+						}
+					}
+					literacy = 0.72
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = burgundian
+							has_pop_culture = dutch
+							has_pop_culture = vinlander
+							has_pop_culture = finnish
+						}
+					}
+					literacy = 0.59
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = scottish
+							has_pop_culture = beornian
+							has_pop_culture = septiman
+						}
+					}
+					literacy = 0.52
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = latvian
+							has_pop_culture = estonian
+							has_pop_culture = portuguese
+						}
+					}
+					literacy = 0.51
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = czech
+							has_pop_culture = lotharian
+							has_pop_culture = welsh
+							has_pop_culture = english
+							has_pop_culture = plantagenian
+						}
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = amazonian
+						}
+					}
+					literacy = 0.46
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = venetian
+							has_pop_culture = catalan
+							has_pop_culture = polish
+						}
+					}
+					literacy = 0.40
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = north_italian
+						}
+					}
+					literacy = 0.37
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = south_italian
+							has_pop_culture = slovak
+							has_pop_culture = slovene
+							has_pop_culture = boer
+							has_pop_culture = qingqiuan
+						}
+					}
+					literacy = 0.34
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = provencal
+							has_pop_culture = hungarian
+							has_pop_culture = breton
+							has_pop_culture = irish
+							has_pop_culture = french
+							has_pop_culture = anglois
+							has_pop_culture = japanese
+						}
+					}
+					literacy = 0.29
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = spanish
+							has_pop_culture = persian
+							has_pop_culture = greek
+							has_pop_culture = romanian
+							has_pop_culture = azerbaijani
+						}
+					}
+					literacy = 0.24
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = albanian
+							has_pop_culture = lusitanian
+						}
+					}
+					literacy = 0.23
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = lithuanian
+							has_pop_culture = bedouin
+							has_pop_culture = afro_american
+						}
+					}
+					literacy = 0.19
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = korean
+							has_pop_culture = aryan
+							has_pop_culture = russian
+							has_pop_culture = croat
+							has_pop_culture = ukrainian
+						}
+					}
+					literacy = 0.17
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = turkish
+							has_pop_culture = north_caucasian
+							has_pop_culture = quechua
+							has_pop_culture = afro_caribeno
+							has_pop_culture = caribeno
+							has_pop_culture = afro_caribbean
+							has_pop_culture = afro_brazilian
+							has_pop_culture = zhuang
+							has_pop_culture = granadan
+						}
+					}
+					literacy = 0.14
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = bulgarian 
+							has_pop_culture = central_american
+							has_pop_culture = armenian
+							has_pop_culture = maghrebi
+							has_pop_culture = vietnamese
+							has_pop_culture = tatar
+							has_pop_culture = khmer
+							has_pop_culture = malay
+							has_pop_culture = filipino
+							has_pop_culture = javan
+							has_pop_culture = moluccan
+							has_pop_culture = thai
+							has_pop_culture = lao
+							has_pop_culture = malagasy
+							has_pop_culture = tibetan
+							has_pop_culture = burmese
+							has_pop_culture = serb
+							has_pop_culture = cherokee
+							has_pop_culture = iroquois
+							has_pop_culture = cree
+							has_pop_culture = mexican
+						}
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = mongol
+							has_pop_culture = turkic
+							has_pop_culture = misri
+							has_pop_culture = oirat
+							has_pop_culture = beifaren
+							has_pop_culture = nanfaren
+							has_pop_culture = manchu
+							has_pop_culture = native_american_minor
+							has_pop_culture = indo_aryan
+							has_pop_culture = dravidian
+							has_pop_culture = punjabi
+							has_pop_culture = afro_asiatic 
+							has_pop_culture = nepali
+							has_pop_culture = mashriqi
+							has_pop_culture = algonquin
+							has_pop_culture = apache
+							has_pop_culture = pueblo
+							has_pop_culture = rohnnst
+							has_pop_culture = mesoarcadian_native
+							has_pop_culture = mayan
+							has_pop_culture = salvadoran_native
+							has_pop_culture = amazonian_native
+							has_pop_culture = patagonian
+						}
+					}
+					literacy = 0.04
+				}
+			}
+			#Update R&D Reform to the literacy level they are at.
+			any_country = {
+				limit = { NOT = { literacy = 0.1 } }
+				political_reform = no_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.1 
+					NOT = { literacy = 0.2 }
+				}
+				political_reform = rudimentary_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.2 
+					NOT = { literacy = 0.3 }
+				}
+				political_reform = very_low_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.3 
+					NOT = { literacy = 0.4 }
+				}
+				political_reform = low_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.4 
+					NOT = { literacy = 0.5 }
+				}
+				political_reform = basic_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.5 
+					NOT = { literacy = 0.6 }
+				}
+				political_reform = moderate_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.6 
+					NOT = { literacy = 0.7 }
+				}
+				political_reform = acceptable_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.7 
+					NOT = { literacy = 0.8 }
+				}
+				political_reform = good_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.8 
+					NOT = { literacy = 0.9 }
+				}
+				political_reform = very_good_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 0.9 
+					NOT = { literacy = 1.0 }
+				}
+				political_reform = advanced_rnd
+			}
+			any_country = {
+				limit = { 
+					literacy = 1.0
+				}
+				political_reform = futuristic_rnd
+			}
+		}
+	}
+}

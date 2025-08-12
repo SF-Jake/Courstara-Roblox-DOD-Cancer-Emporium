@@ -111,6 +111,7 @@ gunboat = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -172,6 +173,7 @@ status_quo = {
 		always = no
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 	}
 
 	break_truce_prestige_factor = 5
@@ -207,6 +209,7 @@ conquest = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		total_pops = 400000
@@ -294,6 +297,7 @@ civil_war = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { is_our_vassal = THIS }
 		always = no
 	}
@@ -352,6 +356,7 @@ add_to_sphere = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
 		}
@@ -417,6 +422,7 @@ take_from_sphere = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -483,6 +489,7 @@ acquire_core_state_tiny = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -547,6 +554,7 @@ acquire_core_state_small = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -611,6 +619,7 @@ acquire_core_state_medium = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -676,6 +685,7 @@ acquire_core_state_large = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -740,6 +750,7 @@ acquire_core_state_huge = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -807,6 +818,7 @@ annex_core_country = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -871,6 +883,7 @@ acquire_substate_region = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -945,6 +958,7 @@ acquire_state_tiny = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1048,6 +1062,7 @@ acquire_state_small = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1152,6 +1167,7 @@ acquire_state_medium = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1256,6 +1272,7 @@ acquire_state_large = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1360,6 +1377,7 @@ acquire_state_huge = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1465,6 +1483,7 @@ place_in_the_sun_tiny = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1547,6 +1566,7 @@ place_in_the_sun_small = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1628,6 +1648,7 @@ place_in_the_sun_medium = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1709,6 +1730,7 @@ place_in_the_sun_large = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1790,6 +1812,7 @@ place_in_the_sun_huge = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -1968,6 +1991,7 @@ demand_reperations = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { has_country_modifier = no_more_war_reperations }
 		NOT = { 
 			OR = { 
@@ -2009,6 +2033,7 @@ cut_down_to_size_boxer = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { is_our_vassal = THIS }
 		is_disarmed = no
 	}
@@ -2486,6 +2511,7 @@ liberate_country= {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
 		}
@@ -2598,6 +2624,7 @@ dismantle_forts = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		NOT = { 
 			OR = { 
@@ -2667,6 +2694,7 @@ release_puppet = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		num_of_vassals_no_substates = 1
 		THIS = {
@@ -2723,6 +2751,7 @@ make_puppet = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		NOT = { 
 			OR = { 
@@ -2806,6 +2835,7 @@ become_independent = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		is_our_vassal = THIS
 		has_recently_lost_war = no
 	}
@@ -2871,6 +2901,7 @@ humiliate = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		NOT = { 
 			OR = { 
@@ -2924,6 +2955,7 @@ hre_unification = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		war = no
 		THIS ={
 			tag = BOH 
@@ -3000,6 +3032,7 @@ demand_concession_casus_belli_tiny = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -3076,6 +3109,7 @@ demand_concession_casus_belli_small = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -3152,6 +3186,7 @@ demand_concession_casus_belli_medium = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -3228,6 +3263,7 @@ demand_concession_casus_belli_large = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -3304,6 +3340,7 @@ demand_concession_casus_belli_huge = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -3380,6 +3417,7 @@ establish_protectorate_casus_belli = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = {
 			OR = {
 				is_culture_group = west_african
@@ -3461,6 +3499,7 @@ unification_humiliate_cb = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		THIS = {
 			culture_has_union_tag = yes
@@ -3513,6 +3552,7 @@ unification_release_puppet_cb = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		num_of_vassals_no_substates = 1
 		THIS = {
 			culture_has_union_tag = yes
@@ -3572,6 +3612,7 @@ unification_casus_belli = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		THIS = {
 			culture_has_union_tag = yes
 			nationalism_n_imperialism = 1
@@ -3640,6 +3681,7 @@ unification_annex_casus_belli = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		THIS = {
 			culture_has_union_tag = yes
@@ -3699,6 +3741,7 @@ rude_boy = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { is_our_vassal = THIS }
 		badboy = 1
 	}
@@ -3744,6 +3787,7 @@ install_communist_gov_cb = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -3826,6 +3870,7 @@ uninstall_communist_gov_cb = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		THIS = {
 			# If actor ruling party is not communist
 			NOT = {
@@ -3906,6 +3951,7 @@ conquest_low = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -4005,6 +4051,7 @@ take_capital = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { tag = CHI }
 		this = { NOT = { tag = CHI } }
 		this = { NOT = { badboy = 1 } }
@@ -4115,6 +4162,7 @@ acquire_treaty_port = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
@@ -4278,6 +4326,7 @@ demand_for_allies = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		civilized = yes
 		NOT = { 
 			OR = { 
@@ -4348,6 +4397,7 @@ establish_colonial_protectorate_casus_belli = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		OR = {
 			is_culture_group = west_african
 			is_culture_group = central_african
@@ -4430,6 +4480,7 @@ demand_colony_for_allies = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -4503,6 +4554,7 @@ make_puppet_small = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		this = { NOT = { badboy = 1 } }
 		NOT = { is_our_vassal = THIS }
 		is_greater_power = no
@@ -4578,6 +4630,7 @@ make_puppet_large = {
 	can_use = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
+		NOT = { tag = JAN }
 		OR = {
 			total_pops = 3000000
 			number_of_states = 10
