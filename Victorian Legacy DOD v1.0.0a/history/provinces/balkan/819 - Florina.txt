@@ -2,5 +2,6 @@ owner = MAC
 controller = MAC
 add_core = MAC
 trade_goods = coal
+terrain = hills_mine
 life_rating = 35
 

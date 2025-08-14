@@ -3,5 +3,6 @@ controller = CHI
 add_core = CHI
 #add_core = SXI
 trade_goods = coal
+terrain = hills_mine
 life_rating = 32
 

@@ -3,6 +3,7 @@ controller = KLM
 add_core = KLM
 #add_core = INO
 trade_goods = sulphur
+terrain = plains_mine
 life_rating = 32
 
 

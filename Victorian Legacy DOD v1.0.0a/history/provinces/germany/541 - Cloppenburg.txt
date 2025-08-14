@@ -3,5 +3,6 @@ controller = OLD
 add_core = OLD
 #add_core = GER
 trade_goods = coal
+terrain = plains_mine
 life_rating = 38
 

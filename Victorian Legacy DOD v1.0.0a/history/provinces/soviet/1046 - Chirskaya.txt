@@ -4,5 +4,6 @@ add_core = ASK
 add_core = CRI
 #add_core = UKR
 trade_goods = coal
+terrain = plains_mine
 life_rating = 35
 

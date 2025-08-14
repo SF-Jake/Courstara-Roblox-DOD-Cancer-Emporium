@@ -3,6 +3,7 @@ controller = SCA
 add_core = SCA
 add_core = SCO
 trade_goods = sulphur
+terrain = mountain_mine
 life_rating = 35
 naval_base = 2
 state_building = {

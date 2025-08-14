@@ -2,5 +2,6 @@ owner = AMA
 controller = AMA
 add_core = AMA
 trade_goods = iron
+terrain = hills_mine
 life_rating = 35
 

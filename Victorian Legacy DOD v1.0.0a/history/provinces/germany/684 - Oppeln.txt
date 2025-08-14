@@ -3,6 +3,7 @@ controller = BOH
 add_core = BOH
 #add_core = PLC
 trade_goods = coal
+terrain = plains_mine
 life_rating = 38
 fort = 1
 1861.1.1 = { railroad = 3 }

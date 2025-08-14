@@ -2,5 +2,6 @@ owner = CRI
 controller = CRI
 add_core = CRI
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 35
 

@@ -4,6 +4,7 @@ add_core = BRG
 add_core = RHI
 #add_core = GER
 trade_goods = iron
+terrain = plains_mine
 life_rating = 42
 state_building = {
 	level = 1

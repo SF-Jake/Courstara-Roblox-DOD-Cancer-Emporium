@@ -2,6 +2,7 @@ owner = KOR
 controller = KOR
 add_core = KOR
 trade_goods = iron
+terrain = hills_mine
 life_rating = 32
 
 

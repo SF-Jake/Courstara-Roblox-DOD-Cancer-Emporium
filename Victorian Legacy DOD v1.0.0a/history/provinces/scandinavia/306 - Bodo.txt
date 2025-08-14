@@ -2,6 +2,7 @@ owner = SCA
 controller = SCA
 add_core = SCA
 trade_goods = iron
+terrain = mountain_mine
 life_rating = 38
 
 

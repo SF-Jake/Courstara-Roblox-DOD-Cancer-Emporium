@@ -3,5 +3,6 @@ controller = CLM
 add_core = CLM
 add_core = INC
 trade_goods = cotton
+terrain = steppe_mine
 life_rating = 35
 

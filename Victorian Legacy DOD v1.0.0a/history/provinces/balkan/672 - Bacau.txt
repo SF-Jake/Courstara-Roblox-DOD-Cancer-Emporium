@@ -4,6 +4,7 @@ add_core = MOL
 #add_core = ROM
 
 trade_goods = grain
+terrain = mountain_mine
 life_rating = 35
 1861.1.1 = {
 	controller = ROM

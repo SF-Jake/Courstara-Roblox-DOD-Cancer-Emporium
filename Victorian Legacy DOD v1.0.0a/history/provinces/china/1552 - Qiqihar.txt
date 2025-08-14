@@ -2,4 +2,5 @@ owner = MCK
 controller = MCK
 add_core = MCK
 trade_goods = coal
+terrain = woods_mine
 life_rating = 32

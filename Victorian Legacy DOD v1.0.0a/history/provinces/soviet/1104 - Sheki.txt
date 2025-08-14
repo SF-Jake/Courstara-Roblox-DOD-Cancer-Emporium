@@ -3,5 +3,6 @@ controller = AZB
 add_core = AZB
 add_core = ARM
 trade_goods = grain
+terrain = steppe_mine
 life_rating = 35
 

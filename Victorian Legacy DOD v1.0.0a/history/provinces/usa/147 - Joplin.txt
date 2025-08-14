@@ -2,5 +2,6 @@ owner = PLA
 controller = PLA 
 add_core = PLA 
 trade_goods = coal
+terrain = woods_mine
 life_rating = 35
 

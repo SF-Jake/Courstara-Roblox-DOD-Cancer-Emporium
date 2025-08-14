@@ -2,5 +2,6 @@ owner = DNG
 controller = DNG
 add_core = DNG
 trade_goods = coal
+terrain = dryhills_mine
 life_rating = 35
 colonial = 1

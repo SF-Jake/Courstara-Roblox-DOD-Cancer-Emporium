@@ -2,6 +2,7 @@ owner =INC
 controller = INC
 add_core = INC
 trade_goods = iron
+terrain = desert_mine
 life_rating = 35
 
 

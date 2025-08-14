@@ -2,6 +2,7 @@ owner = SUA
 controller = SUA
 add_core = SUA
 trade_goods = iron
+terrain = hills_mine
 life_rating = 35
 
 

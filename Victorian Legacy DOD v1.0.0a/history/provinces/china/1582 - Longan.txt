@@ -5,5 +5,6 @@ add_core = CHI
 #add_core = TPG
 add_core = TIB
 trade_goods = coal
+terrain = dryhills_mine
 life_rating = 32
 

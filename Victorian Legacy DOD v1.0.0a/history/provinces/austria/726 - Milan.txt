@@ -3,6 +3,7 @@ controller = LOM
 add_core = LOM
 #add_core = ITA
 trade_goods = iron
+terrain = farmlands_mine
 life_rating = 40
 fort = 1
 #state_building = {

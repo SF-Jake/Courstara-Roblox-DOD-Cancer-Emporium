@@ -2,5 +2,6 @@ owner = LOT
 controller = LOT
 add_core = LOT
 trade_goods = coal
+terrain = hills_mine
 life_rating = 35
 

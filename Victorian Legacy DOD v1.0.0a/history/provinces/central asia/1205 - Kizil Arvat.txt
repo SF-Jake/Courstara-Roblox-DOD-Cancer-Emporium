@@ -2,6 +2,7 @@ owner = AFS
 controller = AFS
 add_core = AFS
 trade_goods = grain
+terrain = desert_mine
 life_rating = 35
 1861.1.1 = {
 	owner = RUS

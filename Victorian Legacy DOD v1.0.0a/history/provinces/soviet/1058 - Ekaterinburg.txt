@@ -2,5 +2,6 @@ owner = SIB
 controller = SIB
 add_core = SIB
 trade_goods = coal
+terrain = forest_mine
 life_rating = 35
 

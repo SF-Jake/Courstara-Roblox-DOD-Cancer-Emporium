@@ -3,5 +3,6 @@ controller = SCA
 add_core = SCA
 #add_core = SCA
 trade_goods = sulphur
+terrain = forest_mine
 life_rating = 38
 naval_base = 1

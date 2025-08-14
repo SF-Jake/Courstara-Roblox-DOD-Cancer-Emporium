@@ -3,6 +3,7 @@ controller = BEG
 add_core = BEG
 #add_core = GER
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 38
 railroad = 1
 state_building = {

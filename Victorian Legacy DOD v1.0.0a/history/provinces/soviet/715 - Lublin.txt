@@ -6,5 +6,6 @@ add_core = PLC
 #add_core = CPL
 ##add_core = RUT
 trade_goods = sulphur
+terrain = plains_mine
 life_rating = 35
 

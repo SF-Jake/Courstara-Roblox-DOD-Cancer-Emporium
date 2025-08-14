@@ -3,5 +3,6 @@ controller = KZH
 add_core = KZH
 add_core = CHG
 trade_goods = grain
+terrain = mountain_mine
 life_rating = 35
 

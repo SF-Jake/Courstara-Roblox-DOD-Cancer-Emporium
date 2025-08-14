@@ -2,6 +2,7 @@ owner = MJN
 controller = MJN
 add_core = MJN
 trade_goods = iron
+terrain = dryhills_mine
 life_rating = 35
 
 1836.1.2 = {

@@ -2,6 +2,7 @@ owner = MAT
 controller = MAT
 add_core = MAT
 trade_goods = iron
+terrain = steppe_mine
 life_rating = 35
 
 

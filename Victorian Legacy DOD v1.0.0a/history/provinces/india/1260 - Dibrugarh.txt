@@ -2,6 +2,7 @@ owner = BNG
 controller = BNG
 add_core = BNG
 trade_goods = tea
+terrain = jungle_mine
 life_rating = 35
 
 

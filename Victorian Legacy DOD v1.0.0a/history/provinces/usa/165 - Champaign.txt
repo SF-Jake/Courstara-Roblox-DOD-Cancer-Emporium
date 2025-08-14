@@ -3,6 +3,7 @@ controller = VIN
 add_core = VIN
 
 trade_goods = coal
+terrain = plains_mine
 life_rating = 35
 
 

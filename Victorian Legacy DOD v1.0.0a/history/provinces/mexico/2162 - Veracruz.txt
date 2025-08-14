@@ -2,5 +2,6 @@ owner = CLM
 controller = CLM
 add_core = CLM
 trade_goods = fruit
+terrain = woods_mine
 life_rating = 35
 naval_base = 1

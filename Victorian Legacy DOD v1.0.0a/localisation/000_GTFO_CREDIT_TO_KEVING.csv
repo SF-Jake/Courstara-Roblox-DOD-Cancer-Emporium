@@ -1,5 +1,5 @@
-ï»¿key;big chungus;;;;;;;x
-release_vassals_title;Manage Vassals;;;;;;;x
+key;big chungus;;;;;;;x
+release_vassals_title;§YManage Vassals;;;;;;;x
 release_vassals_desc;Trigger an event for each vassal which then triggers an event from them to us in which we can decide to free them or not.;;;;;;;x
 EVTNAME91306;Manage Vassals;;;;;;;x
 EVTDESC91306;Trigger an event for each vassal which then triggers an event from them to us in which we can decide to free them or not.;;;;;;;x

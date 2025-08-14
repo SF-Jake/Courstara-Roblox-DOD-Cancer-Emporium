@@ -3,6 +3,7 @@ controller = MNR
 add_core = MNR
 #add_core = GER
 trade_goods = coal
+terrain = woods_mine
 life_rating = 38
 fort = 1
 1861.1.1 = {

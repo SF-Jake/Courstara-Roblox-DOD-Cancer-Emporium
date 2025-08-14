@@ -3,6 +3,7 @@ controller = TUR
 add_core = SER
 
 trade_goods = iron
+terrain = woods_mine
 life_rating = 36
 
 

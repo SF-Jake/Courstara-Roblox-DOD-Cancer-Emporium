@@ -3,6 +3,7 @@ controller = DUA
 add_core = DUA
 add_core = OCC
 trade_goods = sulphur
+terrain = hills_mine
 life_rating = 33
 state_building = {
 	level = 1

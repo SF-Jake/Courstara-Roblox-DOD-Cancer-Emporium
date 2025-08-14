@@ -2,6 +2,7 @@ owner = PRV
 controller = PRV
 add_core = PRV
 trade_goods = sulphur
+terrain = plains_mine
 life_rating = 33
 1861.1.1 = { railroad = 3 }
 

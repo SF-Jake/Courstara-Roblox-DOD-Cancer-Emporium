@@ -2,6 +2,7 @@ owner = BSH
 controller = BSH
 add_core = BSH
 trade_goods = iron
+terrain = dryhills_mine
 life_rating = 35
 
 

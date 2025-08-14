@@ -2,6 +2,7 @@ owner = MUG
 controller = MUG
 add_core = MUG
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 32
 
 

@@ -2,6 +2,7 @@ owner = CHI
 controller = CHI
 add_core = CHI
 trade_goods = iron
+terrain = dryhills_mine
 life_rating = 32
 
 

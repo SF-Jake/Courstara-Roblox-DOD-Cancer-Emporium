@@ -2,6 +2,7 @@ owner = YLO
 controller = YLO
 add_core = YLO
 trade_goods = coal
+terrain = woods_mine
 life_rating = 35
 
 

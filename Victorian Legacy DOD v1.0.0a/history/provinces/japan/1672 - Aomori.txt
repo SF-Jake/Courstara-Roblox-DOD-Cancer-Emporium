@@ -2,6 +2,7 @@ owner = JAP
 controller = JAP
 add_core = JAP
 trade_goods = iron
+terrain = woods_mine
 life_rating = 35
 
 

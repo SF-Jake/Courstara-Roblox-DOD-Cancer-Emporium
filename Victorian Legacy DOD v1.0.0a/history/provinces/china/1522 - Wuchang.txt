@@ -4,6 +4,7 @@ add_core = CHI
 #add_core = TPG
 #add_core = HNN
 trade_goods = iron
+terrain = farmlands_mine
 life_rating = 32
 
 

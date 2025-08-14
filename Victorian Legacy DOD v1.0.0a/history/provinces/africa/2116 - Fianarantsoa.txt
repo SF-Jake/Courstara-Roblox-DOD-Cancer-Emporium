@@ -2,5 +2,6 @@ owner = MAD
 controller = MAD
 add_core = MAD
 trade_goods = coal
+terrain = mountain_mine
 life_rating = 35
 

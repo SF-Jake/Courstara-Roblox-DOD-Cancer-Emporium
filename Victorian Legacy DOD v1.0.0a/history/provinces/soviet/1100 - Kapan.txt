@@ -4,6 +4,7 @@ add_core = AZB
 add_core = ARM
 add_core = AZB
 trade_goods = iron
+terrain = mountain_mine
 life_rating = 35
 
 

@@ -3,6 +3,7 @@ controller = TUR
 add_core = TUR
 add_core = ARM
 trade_goods = iron
+terrain = mountain_mine
 life_rating = 35
 
 

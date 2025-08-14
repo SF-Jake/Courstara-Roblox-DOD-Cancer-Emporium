@@ -2,6 +2,7 @@ owner = SWI
 controller = SWI
 add_core = SWI
 trade_goods = iron
+terrain = hills_mine
 life_rating = 38
 railroad = 1
 fort = 1

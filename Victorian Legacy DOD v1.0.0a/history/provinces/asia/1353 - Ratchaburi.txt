@@ -2,6 +2,7 @@ owner = SIA
 controller = SIA
 add_core = SIA
 trade_goods = iron
+terrain = hills_mine
 life_rating = 35
 
 

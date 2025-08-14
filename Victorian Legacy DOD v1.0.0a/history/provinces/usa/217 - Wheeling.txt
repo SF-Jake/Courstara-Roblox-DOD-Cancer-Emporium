@@ -3,6 +3,7 @@ controller = NBG
 add_core = NBG
 
 trade_goods = coal
+terrain = woods_mine
 life_rating = 35
 
 

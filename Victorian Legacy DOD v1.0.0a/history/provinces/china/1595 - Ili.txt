@@ -2,6 +2,7 @@ owner = CHG
 controller = CHG
 add_core = CHG
 trade_goods = sulphur
+terrain = mountain_mine
 life_rating = 35
 
 

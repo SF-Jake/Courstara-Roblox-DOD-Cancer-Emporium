@@ -4,6 +4,7 @@ political_decisions = {
 		alert = yes
 		picture = control_puppets
 		potential = {
+			has_country_flag = show_options_Y
 			NOT = { war_with = HUG }
 			ai = no
 			num_of_vassals = 1
@@ -28,6 +29,7 @@ political_decisions = {
 		alert = yes
 		picture = return_puppets
 		potential = {
+			has_country_flag = show_options_Y
 			ai = no
 			war_with = HUG
 		}

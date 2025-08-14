@@ -1,5 +1,10 @@
-owner = AZB
-controller = AZB
+owner = AZB
+
+controller = AZB
+
 add_core = AZB
-trade_goods = grain
-life_rating = 35
+
+trade_goods = grain
+terrain = steppe_mine
+life_rating = 35
+

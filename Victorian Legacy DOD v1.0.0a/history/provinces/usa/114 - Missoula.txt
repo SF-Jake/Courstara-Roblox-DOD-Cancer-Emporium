@@ -1,6 +1,11 @@
 owner = DNG
 controller = DNG
 add_core = DNG
-trade_goods = coal
-life_rating = 35
+
+
+trade_goods = coal
+terrain = mountain_mine
+life_rating = 35
+
+
 colonial = 1

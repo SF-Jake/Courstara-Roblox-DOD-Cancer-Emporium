@@ -3,6 +3,7 @@ controller = VIN
 add_core = VIN
 
 trade_goods = coal
+terrain = woods_mine
 life_rating = 35
 railroad = 1
 

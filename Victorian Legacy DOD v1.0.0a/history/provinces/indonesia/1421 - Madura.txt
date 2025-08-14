@@ -2,5 +2,6 @@ owner = JAV
 controller = JAV
 add_core = JAV
 trade_goods = sulphur
+terrain = farmlands_mine
 life_rating = 32
 

@@ -2,6 +2,7 @@ owner = MON
 controller = MON
 add_core = MON
 trade_goods = iron
+terrain = mountain_mine
 life_rating = 35
 
 

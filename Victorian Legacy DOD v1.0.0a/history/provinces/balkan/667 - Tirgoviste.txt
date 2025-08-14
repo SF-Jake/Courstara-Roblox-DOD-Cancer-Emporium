@@ -5,6 +5,7 @@ add_core = TUR
 #add_core = ROM
 
 trade_goods = wool
+terrain = hills_mine
 life_rating = 35
 1861.1.1 = {
 	controller = ROM

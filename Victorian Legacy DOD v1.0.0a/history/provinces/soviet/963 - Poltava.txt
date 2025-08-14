@@ -3,5 +3,6 @@ controller = UKR
 add_core = UKR
 add_core = PLC
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 35
 

@@ -4,6 +4,7 @@ add_core = TUS
 #add_core = ITA
 
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 38
 1861.1.1 = {
 	controller = ITA

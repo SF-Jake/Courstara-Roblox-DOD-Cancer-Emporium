@@ -2,5 +2,6 @@ owner = BUR
 controller = BUR
 add_core = BUR
 trade_goods = opium
+terrain = jungle_mine
 life_rating = 35
 

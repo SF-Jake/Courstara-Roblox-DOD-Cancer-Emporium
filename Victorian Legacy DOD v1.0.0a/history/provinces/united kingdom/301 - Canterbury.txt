@@ -3,6 +3,7 @@ controller = DUA
 add_core = DUA
 add_core = ENG
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 35 #Chatham
 fort = 1
 

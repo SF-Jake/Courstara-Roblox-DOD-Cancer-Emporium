@@ -1,4 +1,4 @@
-
 trade_goods = coal
+terrain = plains_mine
 life_rating = 25
 

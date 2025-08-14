@@ -3,6 +3,7 @@ controller = SAK
 add_core = SAK
 #add_core = INO
 trade_goods = grain
+terrain = plains_mine
 life_rating = 32
 
 

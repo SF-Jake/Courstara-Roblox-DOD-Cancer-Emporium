@@ -2,6 +2,7 @@ owner = SHO
 controller = SHO
 add_core = SHO
 trade_goods = coal
+terrain = mountain_mine
 life_rating = 35
 
 

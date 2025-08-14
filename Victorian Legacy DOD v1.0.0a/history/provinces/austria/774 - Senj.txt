@@ -3,6 +3,7 @@ controller = VEN
 add_core = VEN
 add_core = CRO
 trade_goods = iron
+terrain = hills_mine
 life_rating = 35
 
 

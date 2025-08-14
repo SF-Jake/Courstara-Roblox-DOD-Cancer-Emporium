@@ -2,6 +2,7 @@ owner = DNG
 controller = DNG
 add_core = DNG
 trade_goods = iron
+terrain = mountain_mine
 life_rating = 38
 
 

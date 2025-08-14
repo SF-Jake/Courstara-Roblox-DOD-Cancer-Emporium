@@ -1,3 +1,4 @@
 trade_goods = fruit
+terrain = desert_mine
 life_rating = 10
 

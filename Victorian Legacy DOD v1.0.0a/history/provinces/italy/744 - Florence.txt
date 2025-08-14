@@ -4,6 +4,7 @@ add_core = TUS
 #add_core = ITA
 
 trade_goods = iron
+terrain = farmlands_mine
 life_rating = 40
 #state_building = {
 #	level = 1

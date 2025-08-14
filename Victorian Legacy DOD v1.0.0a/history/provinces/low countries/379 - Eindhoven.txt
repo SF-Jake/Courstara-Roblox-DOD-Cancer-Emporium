@@ -3,5 +3,6 @@ controller = BRG
 add_core = BRG
 add_core = NET
 trade_goods = coal
+terrain = woods_mine
 life_rating = 37
 

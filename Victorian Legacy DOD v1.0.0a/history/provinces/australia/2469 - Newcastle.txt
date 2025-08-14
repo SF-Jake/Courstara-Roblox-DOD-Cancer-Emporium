@@ -2,6 +2,7 @@ owner = MJN
 controller = MJN
 add_core = MJN
 trade_goods = coal
+terrain = woods_mine
 life_rating = 35
 
 

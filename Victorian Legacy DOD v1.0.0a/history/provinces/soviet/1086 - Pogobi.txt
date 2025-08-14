@@ -2,5 +2,6 @@ owner = KAM
 controller = KAM
 add_core = KAM
 trade_goods = fish
+terrain = forest_mine
 life_rating = 35
 

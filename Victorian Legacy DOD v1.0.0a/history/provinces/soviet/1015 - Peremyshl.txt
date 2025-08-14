@@ -2,5 +2,6 @@ owner = MUS
 controller = MUS
 add_core = MUS
 trade_goods = coal
+terrain = forest_mine
 life_rating = 35
 

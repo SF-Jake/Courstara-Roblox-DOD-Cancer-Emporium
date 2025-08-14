@@ -2,5 +2,6 @@ owner = KKN
 controller = KKN
 add_core = KKN
 trade_goods = coal
+terrain = boreal_mine
 life_rating = 15
 colonial = 1

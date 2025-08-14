@@ -2,5 +2,6 @@ owner = BRU
 controller = BRU
 add_core = BRU
 trade_goods = grain
+terrain = jungle_mine
 life_rating = 32
 

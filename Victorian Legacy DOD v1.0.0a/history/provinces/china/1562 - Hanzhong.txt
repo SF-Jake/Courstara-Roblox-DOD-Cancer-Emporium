@@ -4,5 +4,6 @@ add_core = CHI
 #add_core = TPG
 #add_core = XBI
 trade_goods = coal
+terrain = plains_mine
 life_rating = 32
 

@@ -3,6 +3,7 @@ controller = BRG
 add_core = BRG
 #add_core = GER
 trade_goods = sulphur
+terrain = woods_mine
 life_rating = 38
 1861.1.1 = { railroad = 3 }
 

@@ -2,6 +2,7 @@ owner = SPA
 controller = SPA
 add_core = SPA
 trade_goods = iron
+terrain = plains_mine
 life_rating = 35
 
 

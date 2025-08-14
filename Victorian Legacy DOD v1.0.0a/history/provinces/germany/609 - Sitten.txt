@@ -3,5 +3,6 @@ controller = SAR
 add_core = SAR
 add_core = OCC
 trade_goods = coal
+terrain = mountain_mine
 life_rating = 35
 

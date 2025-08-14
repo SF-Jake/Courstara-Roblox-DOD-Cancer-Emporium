@@ -2,6 +2,7 @@ owner = MCK
 controller = MCK
 add_core = MCK
 trade_goods = iron
+terrain = hills_mine
 life_rating = 32
 
 

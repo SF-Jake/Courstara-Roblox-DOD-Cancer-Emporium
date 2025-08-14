@@ -2,4 +2,5 @@ owner = AOT
 controller = AOT
 add_core = AOT
 trade_goods = coal
+terrain = hills_mine
 life_rating = 35

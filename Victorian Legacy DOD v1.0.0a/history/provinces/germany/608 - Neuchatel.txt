@@ -3,6 +3,7 @@ controller = BRG
 add_core = BRG
 #add_core = PRU
 trade_goods = coal
+terrain = hills_mine
 life_rating = 35
 
 1857.1.1 = {

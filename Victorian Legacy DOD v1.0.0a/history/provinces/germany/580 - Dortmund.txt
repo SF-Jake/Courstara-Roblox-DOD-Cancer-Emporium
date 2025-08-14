@@ -3,6 +3,7 @@ controller = MNR
 add_core = MNR
 #add_core = GER
 trade_goods = coal
+terrain = farmlands_mine
 life_rating = 38
 1861.1.1 = { railroad = 3 }
 
