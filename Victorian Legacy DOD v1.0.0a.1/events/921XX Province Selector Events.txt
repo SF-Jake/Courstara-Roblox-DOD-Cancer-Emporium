@@ -423,7 +423,7 @@ province_event = {
 					owner = { NOT = { badboy = 0.72 } }
 					is_core = HUG
 				}
-				owner = { large_lit_campaign = { } }
+				owner = { huge_lit_campaign = { } }
 			}
 			random_owned = {
 				limit = {
@@ -438,7 +438,7 @@ province_event = {
 					owner = { badboy = 0.72 }
 					is_core = HUG
 				}
-				owner = { large_lit_campaign_broke = { } }
+				owner = { huge_lit_campaign_broke = { } }
 			}
 			random_owned = {
 				limit = {
@@ -1312,17 +1312,5 @@ province_event = {
 				}
 			}
 		}
-	}
-}
-
-province_event = {
-	id = 92103
-	title = "Not enough Money"
-	desc = "You do not have enough money to add this modifier to your state/province."
-
-	is_triggered_only = yes
-
-	option = {
-		name = "I get it Im broke."
 	}
 }

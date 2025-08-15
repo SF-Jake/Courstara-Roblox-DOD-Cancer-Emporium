@@ -22,7 +22,8 @@ nv_education = {
 }
 
 nv_diplomacy = {
-	diplomatic_points_modifier = 2
+	commerce_tech_research_bonus = 0.05
+	diplomatic_points_modifier = 1
 	influence_modifier = 0.75
 	badboy = -0.05
 }
